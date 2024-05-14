@@ -3,23 +3,74 @@
 <head>
     <title>Log In Page</title>
     <link rel="stylesheet" href="login.css">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var form = document.querySelector('.form');
+            form.addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent default form submission behavior
+
+                // Get the values of email and password fields
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+
+                // Check if both email and password fields are filled in
+                if (email.trim() === "" || password.trim() === "") {
+                    alert("Please fill in all fields.");
+                } else {
+                    // Redirect to main.html if all fields are filled in
+                    window.location.href = "main.html";
+                }
+            });
+        });
+    </script>
+
 </head>
 <body>
-    <div class="login-form">
-        <p class="login-text">Log-In</p>
-        <form class="form">
-            <p>
-                <label for="email"><b>Email:</b></label>
-                <input type="email" placeholder="Enter Email" name="email" id="email" required>
-            </p>
-            <p>
-                <label for="password"><b>Password:</b></label>
-                <input type="password" placeholder="Enter Password" name="password" id="password" required>
-            </p>
-            <button type="submit">Log In</button>
+    <nav> 
+        <div class = "navbar">
+            <div class = "topnav-left">
+                <ul> 
+                <li><a class = "logo" id = "logo">NeighborLink</a></li>
+                <li><a href="main.html" class = "home" id = "home">Home</a></li> 
+                <li><a href="aboutUs.html" class = "aboutUs" id = "aboutUs">About Us</a></li> 
+                <li><a href="service.html" class = "contact" id = "service">Services</a></li> 
+                <li><a href="contact.html" class = "contact" id = "contact">Contact</a></li> 
+                </ul> 
+            </div>
+            <div class = "topnav-right">
+                <ul> 
+                <li><a href = "login.html" class = "login" id = "login">Log In</a></li>
+                </ul> 
+            </div>
+        </div>
+    </nav> 
+    
+    <div class = "login-page">
+        <div class = "login-form">
+            <div class = "login-text-div">
+                <p class = "login-text">Log-In to</p>
+                <p class = "login-text">NeighborLink</p>
+            </div>
 
-            <a href = "Register.html" class = "noAccount" id = "noAccount">Do not have an account? Register Now!</a>
-        </form>
+            <form class="form">
+                <p>
+                    <label for="email"><b>Email :</b></label>
+                    <input type="email" placeholder="Enter Email" name="email" id="email" required>
+                </p>
+                <p>
+                    <label for="password"><b>Password :</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" id="password" required>
+                </p>
+                <a href = "forgotpw.html" class = "forgotPassword" id = "forgotPassword">Forgot Password?</a>
+                <button type="submit">Log In</button>
+                <a href = "Register.html" class = "noAccount" id = "noAccount">Do not have an account? Register Now!</a>
+            </form>
+        </div>
+
+        <div class = "login-image">
+            <img src = "images/login.jpg" alt = "login-img" id = "login-img">
+        </div>
     </div>
 </body>
 </html>
