@@ -1,32 +1,87 @@
 <!DOCTYPE html>
 <html>
     <head> 
-        <title>Uber One</title>
-        <link rel="stylesheet" href="style.css">
+        <title>NeighborLink</title>
+        <link rel="stylesheet" href="main.css">
     </head>
 
     <body>
         <nav> 
-            <div class = "topnav">
-                <img src = "NL.png" alt = "logo" id = "logo">
+            <div class = "navbar">
                 <div class = "topnav-left">
                     <ul> 
-                    <li><a href="main.html">Home</a></li> 
-                    <li><a href="aboutUs.html">About</a></li> 
-                    <li><a href="service.html">Services</a></li> 
-                    <li><a href="contact.html">Contact</a></li> 
+                    <li><a class = "logo" id = "logo">NeighborLink</a></li>
+                    <li><a href="main.html" class = "home" id = "home">Home</a></li> 
+                    <li><a href="aboutUs.html" class = "aboutUs" id = "aboutUs">About Us</a></li> 
+                    <li><a href="service.html" class = "contact" id = "service">Services</a></li> 
+                    <li><a href="contact.html" class = "contact" id = "contact">Contact</a></li> 
                     </ul> 
                 </div>
                 <div class = "topnav-right">
                     <ul> 
-                    <li><a href = "LogIn.html" class = "LogIn" id = "LogIn">Log In</a></li>
-                    <li><a href = "Register.html" class = "Register" id = "Register">Register</a></li>
+                    <li><a href = "login.html" class = "login" id = "login">Log In</a></li>
+                    <li><a href = "register.html" class = "register" id = "register">Register</a></li>
+                    <li><a href = "profile.html" class = "profile" id = "profile">Profile</a></li>
                     </ul> 
                 </div>
             </div>
         </nav> 
+        
         <div class = "mainbody">
             <h1>Share your RIDE, Share your Dream</h1>
         </div>
+
+        <footer>
+            <div class = "flex-left">
+                <div class = "copyright">
+                    <p class = "cr">© Copyright 2024 NeighborLink</p>
+                </div>
+                <div class = "promote">
+                    <p class = "follow-us">Follow us:</p>
+                    <div class = "socmed">
+                        <div class = "socmedlogo">
+                            <img src = "Images/instagram.png" alt = "iglogo" id = "iglogo">
+                        </div>
+                        <div class = "socmedlogo">
+                            <img src = "Images/facebook.png" alt = "fblogo" id = "fblogo">
+                        </div>
+                        <div class = "socmedlogo">
+                            <img src = "Images/twitter.png" alt = "twlogo" id = "twlogo">
+                        </div>
+                        <div class = "socmedlogo">
+                            <img src = "Images/linkedin.png" alt = "linkedinlogo" id = "linkedinlogo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "flex-right">
+                <div class = "product">
+                    <ul> 
+                        <li><a class = "heading-text" id = "product">Product</a></li>
+                        <li><a href = "ride.html" class = "ride" id = "ride">Ride</a></li> 
+                        <li><a href="drive.html" class = "drive" id = "drive">Drive</a></li> 
+                    </ul> 
+                </div>
+                <div class = "company">
+                    <ul> 
+                        <li><a class = "heading-text" id = "company">Company</a></li>
+                        <li><a href = "aboutUs.html" class = "aboutUs" id = "aboutUs">About Us</a></li> 
+                        <li><a href="blog.html" class = "blog" id = "blog">Blog</a></li> 
+                        <li><a href="careers.html" class = "career" id = "career">Careers</a></li>
+                        <li><a href="community.html" class = "community" id = "community">Community</a></li> 
+                    </ul> 
+                </div>
+                <div class = "legal">
+                    <ul>
+                        <li><a class = "heading-text" id = "legal">Legal</a></li>
+                        <li><a href = "security.html" class = "security" id = "security">Security</a></li> 
+                        <li><a href = "terms-and-conditions.html" class = "t&c" id = "t&c">Terms and Conditions</a></li> 
+                        <li><a href = "privacy-policy.html" class = "privacy-policy" id = "privacy-policy">Privacy Policy</a></li> 
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
     </body>
 </html>
