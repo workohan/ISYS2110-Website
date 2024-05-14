@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>NeighborLink</title>
+        <link rel="stylesheet" href="aboutUs.css">
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            const prevButton = document.getElementById("prevButton");
+            const nextButton = document.getElementById("nextButton");
+            const slides = document.querySelectorAll(".slide");
+            let currentSlide = 0;
+
+            showSlide(currentSlide);
+
+            prevButton.addEventListener("click", function() {
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(currentSlide);
+            });
+
+            nextButton.addEventListener("click", function() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            });
+
+            function showSlide(index) {
+                slides.forEach(function(slide) {
+                    slide.classList.remove("active-slide");
+                });
+                slides[index].classList.add("active-slide");
+            }
+        });
+
+        </script>
+    </head>
+
+    <body>
+        <nav> 
+            <div class = "navbar">
+                <div class = "topnav-left">
+                    <ul> 
+                    <li><a class = "logo" id = "logo">NeighborLink</a></li>
+                    <li><a href="main.html" class = "home" id = "home">Home</a></li> 
+                    <li><a href="aboutUs.html" class = "aboutUs" id = "aboutUs">About Us</a></li> 
+                    <li><a href="service.html" class = "contact" id = "service">Services</a></li> 
+                    <li><a href="contact.html" class = "contact" id = "contact">Contact</a></li> 
+                    </ul> 
+                </div>
+                <div class = "topnav-right">
+                    <ul> 
+                    <li><a href = "login.html" class = "login" id = "login">Log In</a></li>
+                    <li><a href = "register.html" class = "register" id = "register">Register</a></li>
+                    <li><a href = "profile.html" class = "profile" id = "profile">Profile</a></li>
+                    </ul> 
+                </div>
+            </div>
+        </nav> 
+        
+        <div class = "mainbody">
+            <h1 class = "mission_text">Our Mission</h1>
+            <p class = "mission_para">As the world increasingly embraces eco-conscious and sustainable 
+                transporation solutions, our mission is to provide an innovative user-friendly web-based car-sharing
+                platform. Designed to meet the growing demand for environmentally-friendly mobility options, NeighbourLink
+                goes beyond merely reducing carbon footprints; It fosters community cohesion and promotes meaningful 
+                interaction among drivers and riders. 
+            </p>
+            <p class = "main_text">Meet our passionate team of community-advocates ready to introduce NeighbourLink to the people of Australia!</p>
+
+            <div class = "carousel">
+                <div class = "slide">
+                        <img src = "images/login.jpg" class = "student_img">
+                        <p class = "studentName">Student Name : Nick Vasiliev</p>
+                        <p class = "studentID">Student ID : 530027601</p>
+                        <p class = "studentRole">Role : Work-coordinator</p>
+                </div>
+                <div class = "slide">
+                    <img src = "images/login.jpg" class = "student_img">
+                    <p class = "studentName">Student Name : Rohan Patil</p>
+                    <p class = "studentID">Student ID : 530027601</p>
+                    <p class = "studentRole">Role : Work-coordinator</p>
+                </div>
+                <div class = "slide">
+                    <img src = "images/login.jpg" class = "student_img">
+                    <p class = "studentName">Student Name : Harry Hehir</p>
+                    <p class = "studentID">Student ID : 530027601</p>
+                    <p class = "studentRole">Role : Work-coordinator</p>
+                </div>
+                <div class = "slide">
+                    <img src = "images/login.jpg" class = "student_img">
+                    <p class = "studentName">Student Name : Sakura Kagawa-Svilay</p>
+                    <p class = "studentID">Student ID : 530527075</p>
+                    <p class = "studentRole">Role : Web Designer</p>
+                </div>
+                <div class = "slide">
+                    <img src = "images/Fideris.jpeg" class = "student_img">
+                    <p class = "studentName">Student Name : Fideris Susanto</p>
+                    <p class = "studentID">Student ID : 530027601</p>
+                    <p class = "studentRole">Role : Web Designer</p>
+                </div>
+            </div>
+
+            <button id="prevButton">
+                <img src = "/images/prev.png" class = "prevButton_img">
+            </button>
+            <button id="nextButton">
+                <img src = "/images/next.png" class = nextButton_img">
+            </button>
+        </div>
+
+        <footer>
+            <div class = "flex-left">
+                <div class = "copyright">
+                    <p class = "cr">© Copyright 2024 NeighborLink</p>
+                </div>
+                <div class = "promote">
+                    <p class = "follow-us">Follow us:</p>
+                    <div class = "socmed">
+                        <div class = "socmedlogo">
+                            <img src = "Images/instagram.png" alt = "iglogo" id = "iglogo">
+                        </div>
+                        <div class = "socmedlogo">
+                            <img src = "Images/facebook.png" alt = "fblogo" id = "fblogo">
+                        </div>
+                        <div class = "socmedlogo">
+                            <img src = "Images/twitter.png" alt = "twlogo" id = "twlogo">
+                        </div>
+                        <div class = "socmedlogo">
+                            <img src = "Images/linkedin.png" alt = "linkedinlogo" id = "linkedinlogo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "flex-right">
+                <div class = "product">
+                    <ul> 
+                        <li><a class = "heading-text" id = "product">Product</a></li>
+                        <li><a href = "ride.html" class = "ride" id = "ride">Ride</a></li> 
+                        <li><a href="drive.html" class = "drive" id = "drive">Drive</a></li> 
+                    </ul> 
+                </div>
+                <div class = "company">
+                    <ul> 
+                        <li><a class = "heading-text" id = "company">Company</a></li>
+                        <li><a href = "aboutUs.html" class = "aboutUs" id = "aboutUs">About Us</a></li> 
+                        <li><a href="blog.html" class = "blog" id = "blog">Blog</a></li> 
+                        <li><a href="careers.html" class = "career" id = "career">Careers</a></li>
+                        <li><a href="community.html" class = "community" id = "community">Community</a></li> 
+                    </ul> 
+                </div>
+                <div class = "legal">
+                    <ul>
+                        <li><a class = "heading-text" id = "legal">Legal</a></li>
+                        <li><a href = "security.html" class = "security" id = "security">Security</a></li> 
+                        <li><a href = "terms-and-conditions.html" class = "t&c" id = "t&c">Terms and Conditions</a></li> 
+                        <li><a href = "privacy-policy.html" class = "privacy-policy" id = "privacy-policy">Privacy Policy</a></li> 
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+    </body>
+</html>
