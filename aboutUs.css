@@ -54,7 +54,7 @@ nav ul li + li {
     width: auto;
     height: auto;
     background-color : white;
-    padding : 10px 100px 100px;
+    padding : 50px 100px 50px;
 }
 
 .about_div {
@@ -67,8 +67,11 @@ nav ul li + li {
 .main_text {
     font-size: 35px;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     font-weight: bold;
+    max-width: 900px;
+    margin: 0 auto; 
+    margin-bottom: 20px;
 }
 
 .carousel {
@@ -76,10 +79,19 @@ nav ul li + li {
     overflow: hidden;
 }
 
+.image_slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
 .slide {
     flex: 0 0 auto;
     width: 100%;
     display: none;
+    text-align: center;
 }
 
 .active-slide {
@@ -97,9 +109,9 @@ nav ul li + li {
 }
 
 #prevButton img, #nextButton img {
-    width: 20px;
+    width: 40px;
     height: auto;
-
+    margin: 0 70px;
 }
 
 .student {
@@ -109,7 +121,7 @@ nav ul li + li {
 }
 
 .student_img {
-    width: 250px;
+    width: 350px;
 }
 /* footer */
 footer {
@@ -170,6 +182,6 @@ footer ul li a {
 
 .flex-right {
     display: flex;
-    justify-content: flex-end; /* Aligns items to the end of the flex container */
-    margin-left: auto; /* Pushes the flex container to the right */
+    justify-content: flex-end;
+    margin-left: auto;
 }
