@@ -126,7 +126,7 @@ footer {
     padding: 15px 15px;
     background-color: #08ECC4;
     color: #000000;
-    font-size : 13px;
+    font-size : 14px;
  }
 
 .flex-left {
@@ -137,13 +137,13 @@ footer {
 
 .copyright {
     font-weight : bold;
-    margin-left : 10px;
+    margin-left : 15px;
 }
 
 .follow-us {
     font-weight : bold;
     color : #000000 ;
-    margin-left : 10px;
+    margin-left : 15px;
 }
   
 .socmed {
@@ -151,11 +151,11 @@ footer {
 }
   
 .socmedlogo {
-    margin-left : 10px ;
+    margin-left : 15px ;
 }
 
 .socmedlogo img {
-    width : 20px;
+    width : 25px;
 }
 
 footer ul li {
@@ -166,18 +166,18 @@ footer ul li {
 
 footer ul li .heading-text {
     font-weight : bold;
-    font-size : 13px;
+    font-size : 14px;
 }
 
 footer ul li a {
     display: block; 
     text-decoration: none; 
-    font-size : 12px;
+    font-size : 13px;
     color : black;
 }
 
 .flex-right {
     display: flex;
-    justify-content: flex-end; /* Aligns items to the end of the flex container */
-    margin-left: auto; /* Pushes the flex container to the right */
+    justify-content: flex-end;
+    margin-left: auto;
 }

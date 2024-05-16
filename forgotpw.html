@@ -19,7 +19,7 @@
                     alert("Please fill in all fields.");
                 } else {
                     // Redirect to main.html if all fields are filled in
-                    window.location.href = "main.html";
+                    window.location.href = "login.html";
                 }
             });
         });
@@ -27,23 +27,45 @@
 
 </head>
 <body>
-    <div class="forgotpw-form">
-        <p class="forgotpw-text">Forgot Password</p>
-        <form class="form">
-            <p>
-                <label for="email"><b>Email:</b></label>
-                <input type="email" placeholder="Enter Email" name="email" id="email" required>
-            </p>
-            <p>
-                <label for="resetPW"><b>Enter New Password:</b></label>
-                <input type="password" placeholder="Enter Password" name="password" id="password" required>
-            </p>
-            <p>
-                <label for="re-resetPW"><b>Re-enter New Password:</b></label>
-                <input type="password" placeholder="Enter Password" name="password" id="password" required>
-            </p>
-            <button type="submit">Reset Password</button>
-        </form>
+
+    <nav> 
+        <div class = "navbar">
+            <div class = "topnav-left">
+                <ul> 
+                <li><a class = "logo" id = "logo">NeighborLink</a></li>
+                <li><a href="main.html" class = "home" id = "home">Home</a></li> 
+                <li><a href="aboutUs.html" class = "aboutUs" id = "aboutUs">About Us</a></li> 
+                <li><a href="service.html" class = "contact" id = "service">Services</a></li> 
+                <li><a href="contact.html" class = "contact" id = "contact">Contact</a></li> 
+                </ul> 
+            </div>
+            <div class = "topnav-right">
+                <ul> 
+                <li><a href = "forgotpw.html" class = "forgotPassword" id = "forgotPassword">Forgot Password</a></li>
+                </ul> 
+            </div>
+        </div>
+    </nav> 
+
+    <div class = "forgotPassword-page">
+        <div class="forgotpw-form">
+            <p class="forgotpw-text">Forgot Password</p>
+            <form class="form">
+                <p>
+                    <label for="email"><b>Email:</b></label>
+                    <input type="email" placeholder="Enter Email" name="email" id="email" required>
+                </p>
+                <p>
+                    <label for="resetPW"><b>Enter New Password:</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" id="password" required>
+                </p>
+                <p>
+                    <label for="re-resetPW"><b>Re-enter New Password:</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" id="password" required>
+                </p>
+                <button type="submit">Reset Password</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
