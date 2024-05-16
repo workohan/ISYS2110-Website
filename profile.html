@@ -2,7 +2,25 @@
 <html>
     <head> 
         <title>NeighbourLink</title>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="profile.css">
+
+        <script>
+            // JavaScript for adding items to the list
+            function addItem() {
+                var input = document.getElementById("requirements");
+                var itemText = input.value;
+                input.value = ""; // Clear the input field after adding
+        
+                var ul = document.getElementById("itemList");
+                var li = document.createElement("li");
+                li.textContent = itemText;
+                ul.appendChild(li);
+            }
+
+            function navigateToDriver() {
+                window.location.href = 'registerDriver-page.html';
+            }
+        </script>
     </head>
 
     <body>
@@ -45,7 +63,61 @@
         </nav> 
         
         <div class = "mainbody">
-            <h1>Share your RIDE, Share your Dream</h1>
+            <div class = "combined">
+                <div class = "mainbody-left">
+                    <h1 class = "accountInfo-text">Account Info</h1>
+
+                    <p class = "heading-text">PROFILE IMAGE</p>
+                    <img src = "Images/addImage.png" class = "profileImage-img">
+
+                    <p class = "heading-text">ACCOUNT DETAILS</p>
+                    <p>
+                        <div class = "container-info">
+                            <p class = "placeholder">Name :</p>
+                            <div class = "text-box">
+                                <p>user name</p>
+                            </div>
+                        </div>
+                    </p>
+                    <p>
+                        <p class = "placeholder">Email :</p>
+                        <div class = "text-box">
+                            <p>user@mail.com</p>
+                        </div>
+                    </p>
+                    <p>
+                        <p class = "placeholder">Phone Number :</p>
+                        <div class = "text-box">
+                            <p>+61 xxx xxx xxx</p>
+                        </div>
+                    </p>
+
+                </div>
+
+                <div class = "mainbody-right">
+                    <div>
+                        <p class = "heading-text">TOTAL CO2 SPARED</p>
+                        <p class = "placeholder">123.4g of CO2</p>
+                    </div>
+                    <div>
+                        <p class = "heading-text" style = "margin-top: 30px;">SPECIAL REQUIREMENTS</p>
+                        <div class = "special-req">
+                            <label for="requirements">Enter Requirements :</label>
+                            <input type="requirements" placeholder="Enter Special Requirements" id="requirements">
+                            <button onclick="addItem()">CONFIRM</button>
+                            <ul id="itemList" class = "itemList">
+                                <!-- List items will be dynamically added here -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class = "bottom-right">
+                        <p class = "heading-text">BECOME A DRIVER</p>
+                        <p class = "description">Click the button below to register as a driver and follow the instructions in the driver's page</p>
+                        <button onclick="navigateToDriver()">REGISTER AS DRIVER</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <footer>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Forgot Password Page</title>
+    <title>NeighbourLink</title>
     <link rel="stylesheet" href="forgotpw.css">
 
     <script>
@@ -32,10 +32,19 @@
         <div class = "navbar">
             <div class = "topnav-left">
                 <ul> 
-                <li><a class = "logo" id = "logo">NeighborLink</a></li>
+                <li><a class = "logo" id = "logo">NeighbourLink</a></li>
                 <li><a href="main.html" class = "home" id = "home">Home</a></li> 
                 <li><a href="aboutUs.html" class = "aboutUs" id = "aboutUs">About Us</a></li> 
-                <li><a href="service.html" class = "contact" id = "service">Services</a></li> 
+                <li class="dropdown">
+                    <div class = "service">
+                        <a href="#">Services</a>
+                        <img src = "Images/down-arrow.png" class = "down-arrow" id = "down-arrow">
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="drive.html">Drive</a>
+                        <a href="ride.html">Ride</a>
+                    </div>
+                </li>
                 <li><a href="contact.html" class = "contact" id = "contact">Contact</a></li> 
                 </ul> 
             </div>

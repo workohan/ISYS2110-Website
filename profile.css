@@ -17,7 +17,7 @@ body {
     font-weight: 550;
 }
 
-.home {
+.profile {
     font-weight : bold;
 }
 
@@ -112,13 +112,133 @@ nav ul li + li {
 
 /* mainbody */
 .mainbody {
-    background-color: white;
-    padding: 10px;
-    height: 500px;
+    background-color: #A6FFEF;
+    padding: 60px 150px;
+    height: auto;
+    font-family: sans-serif;
+    letter-spacing: 1px;
 }
 
-h1 { 
-    color : black;
+/* left mainbody */
+.mainbody-left {
+    display: inline-block;
+    padding: 30px 100px;
+}
+
+.combined {
+    background-color: #FFFFFF;
+    display: flex;
+}
+
+.accountInfo-text {
+    color: #231F20;
+}
+
+.heading-text{
+    font-size: 17px;
+    color: #231F20;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.profileImage-img {
+    width : 130px;
+}
+
+.container-info {
+    display: block;
+    justify-content: center; /* Center the box horizontally */
+}
+
+.placeholder {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 550;
+}
+
+.text-box {
+    width: 250px;
+    height: 30px;
+    padding: 15px;
+    border: 1px solid #231F20;
+    border-radius: 7px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.text-box p {
+    margin: 0;
+    margin-top: 6px;
+    color: #231F20;
+    font-size: 15px;
+}
+
+/* right mainbody */
+.mainbody-right {
+    display: inline-block;
+    position: relative;
+    padding: 100px 150px;
+}
+
+.special-req {
+    display: flex;
+    flex-direction: column;
+}
+
+.special-req label {
+    font-size : 15px;
+    font-weight: 550;
+    margin-bottom: 15px;
+}
+  
+input[type="requirements"] {
+    padding: 12px;
+    width: 300px;;
+    border: 1px solid #231F20;
+    border-radius: 7px;
+    box-sizing: border-box;
+    color: #231F20;
+    height: 50px;
+}
+
+button[onclick="addItem()"] {
+    padding: 15px;
+    background-color: #B09CFC;
+    color: #231F20;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 15px 0px 10px;
+    width: 300px;
+    font-size: 15px;
+}
+
+li {
+    margin-bottom: 7px;
+}
+
+button[onclick="addItem()"]:hover {
+    background-color: #8C6EFA;
+}
+
+button[onclick="navigateToDriver()"] {
+    padding: 15px;
+    background-color: #B09CFC;
+    color: #231F20;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0px 0px 10px;
+    width: 300px;
+    font-size: 15px;
+}
+
+button[onclick="navigateToDriver()"]:hover {
+    background-color: #8C6EFA;
 }
 
 /* footer */

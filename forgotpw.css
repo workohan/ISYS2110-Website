@@ -18,8 +18,8 @@ body {
   font-weight: 550;
 }
 
-.login {
-  font-weight : bold;
+.forgotPassword {
+  font-weight: bold;
 }
 
 .topnav-left {
@@ -27,7 +27,8 @@ body {
 }
 
 .topnav-right {
-  float : right ;
+  float : right;
+  margin-right: 20px;
 }
 
 nav ul { 
@@ -64,7 +65,7 @@ nav ul li + li {
   z-index: 1;
 }
 
-.service {
+.service, .profile {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -86,6 +87,7 @@ nav ul li + li {
   z-index: 2;
   border-radius: 7px;
   font-size: 13px;
+  right: 0;
 }
 
 /* Links inside the dropdown */

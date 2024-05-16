@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head> 
-        <title>NeighborLink</title>
+        <title>NeighbourLink</title>
         <link rel="stylesheet" href="aboutUs.css">
         <script>
             document.addEventListener("DOMContentLoaded", function() {
@@ -38,10 +38,19 @@
             <div class = "navbar">
                 <div class = "topnav-left">
                     <ul> 
-                    <li><a class = "logo" id = "logo">NeighborLink</a></li>
+                    <li><a class = "logo" id = "logo">NeighbourLink</a></li>
                     <li><a href="main.html" class = "home" id = "home">Home</a></li> 
                     <li><a href="aboutUs.html" class = "aboutUs" id = "aboutUs">About Us</a></li> 
-                    <li><a href="service.html" class = "contact" id = "service">Services</a></li> 
+                    <li class="dropdown">
+                        <div class = "service">
+                            <a href="#">Services</a>
+                            <img src = "Images/down-arrow.png" class = "down-arrow" id = "down-arrow">
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="drive.html">Drive</a>
+                            <a href="ride.html">Ride</a>
+                        </div>
+                    </li>
                     <li><a href="contact.html" class = "contact" id = "contact">Contact</a></li> 
                     </ul> 
                 </div>
@@ -49,8 +58,16 @@
                     <ul> 
                     <li><a href = "login.html" class = "login" id = "login">Log In</a></li>
                     <li><a href = "register.html" class = "register" id = "register">Register</a></li>
-                    <li><a href = "profile.html" class = "profile" id = "profile">Profile</a></li>
-                    </ul> 
+                    <li class="dropdown">
+                        <div class = "profile">
+                            <a href="#">Profile</a>
+                            <img src = "Images/down-arrow.png" class = "down-arrow" id = "down-arrow">
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="profile.html">Account Info</a>
+                            <a href="ride.html">Payment Methods</a>
+                        </div>
+                    </li>
                 </div>
             </div>
         </nav> 
@@ -113,7 +130,7 @@
         <footer>
             <div class = "flex-left">
                 <div class = "copyright">
-                    <p class = "cr">© Copyright 2024 NeighborLink</p>
+                    <p class = "cr">© Copyright 2024 NeighbourLink</p>
                 </div>
                 <div class = "promote">
                     <p class = "follow-us">Follow us:</p>
