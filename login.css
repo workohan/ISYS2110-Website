@@ -118,6 +118,8 @@ nav ul li + li {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: sans-serif;
+  letter-spacing: 1px;
 }
 
 .login-form {
@@ -128,11 +130,10 @@ nav ul li + li {
 
 .login-text {
   color: #333;
-  font-family: Helvetica;
-  letter-spacing: 3px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   margin : 3px;
+  width: 200px;
 }
 
 .login-text-div {
@@ -150,18 +151,18 @@ form p {
 
 form label {
   font-family : sans-serif;
-  font-size : 14px;
+  font-size : 15px;
 }
 
 input[type="password"],
 input[type="email"] {
-  font-family: Helvetica;
   padding: 12px;
   width: 100%;
   border: 1px solid #ccc;
   border-radius: 7px;
   box-sizing: border-box;
   color: #333;
+  margin-top: 5px;
 }
 
 button[type="submit"] {
@@ -171,7 +172,7 @@ button[type="submit"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 17px;
   margin-bottom: 10px;
   width: 100%;
 }
@@ -183,7 +184,7 @@ button[type="submit"]:hover {
 .forgotPassword {
   text-align : right;
   padding : 10px;
-  font-size : 12px;
+  font-size : 14px;
   color : #000000;
   margin-bottom : 7px;
 }
@@ -191,12 +192,12 @@ button[type="submit"]:hover {
 .noAccount {
   text-align: center;
   padding : 10px;
-  font-size : 12px;
+  font-size : 14px;
   color : #000000;
 }
 
 .login-image {
-  height: 70.7%; /* Set the height of the container to match the form */
+  height: 73.2%; /* Set the height of the container to match the form */
 }
 
 .login-image img {
