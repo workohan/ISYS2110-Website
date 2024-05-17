@@ -121,9 +121,15 @@ nav ul li + li {
     color: #231F20;
 }
 
+.mainbody .logo {
+    text-align: center;
+    opacity: 0.9;
+}
 .privacyPolicy-text {
     text-align: center;
     font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .container {
@@ -133,7 +139,6 @@ nav ul li + li {
 
 .sidebar {
     width: 350px;
-    background-color: #8C6EFA;
     margin-left: 100px;
     position: relative;
 }
@@ -150,28 +155,19 @@ nav ul li + li {
     margin-bottom: 15px;
 }
 
-.sidebar ul li a, .scroll-top{
+.sidebar ul li a{
     text-decoration: none;
     color: #231F20;
     font-size: 17px;
     display: block;
 }
 
-.sidebar ul li a:hover, .scroll-top:hover {
+.sidebar ul li a:hover {
     font-weight: bold;
-}
-
-.scroll-top {
-    position: absolute;
-    bottom: 0;
-    padding: 30px;
-    margin-left: 30px;
-    margin-bottom: 10px;
 }
 
 .content {
     flex: 1;
-    background-color: #B09CFC;
     margin-right: 100px;
 }
 
