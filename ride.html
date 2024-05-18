@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head> 
-        <title>Add Credit Card Info</title>
-        <link rel="stylesheet" href="creditCard.css">
+        <title>Rider's Page</title>
+        <link rel="stylesheet" href="ride.css">
     </head>
 
     <body>
@@ -44,51 +44,94 @@
             </div>
         </nav> 
         
-        <div class="mainbody">
-            <div class="combined">
-                <div class="mainbody-left">
-                    <h1 class="add-pm">Add Payment Methods</h1>
-                    <div class="credit-card">
-                        <p class="cc-text">Debit or Credit Cards</p>
-                        <a href="creditCard.html" class = "compress-btn">
-                            <img src="Images/Arrow.png" class="compress-btn">
-                        </a>                 
-                    </div>
-                    <p></p>
-                    <div class="credit-card">
-                        <p class="cc-text">Other payment methods</p>
-                        <a href="otherPaymentMethods.html" class = "compress-btn">
-                            <img src="Images/Arrow.png" class="compress-btn">
-                        </a>                 
-                    </div>
+        <div class = "book-ride-page">
+      
+          <div class= "book-rides" >
+            <p class="sub-title-text">Book a RIDE</p>
+
+            <form>
+              <p>
+                <label for="pickupPoint">Pickup Point</label>
+                <input type="text" placeholder="Pick-up location" name="pickupPoint" id="pickupPoint" required>
+              </p>
+                
+              <p>
+                <label for="destination">Destination</label>
+                <input type="text" placeholder="Destination" name="destination" id="destination" required>
+              </p>
+
+              <p>
+                <label for="date">Date</label>
+                <input type="date" placeholder="Date of pickup" name="date" id="date" required>
+              </p>
+
+              <p>
+                <label for="time">Time</label>
+                <input type="text" placeholder="Time of pickup" name="time" id="time" required>
+              </p>
+
+              <button type="submit">Confirm Booking</button>
+            </form>
+            
+
+          </div>
+          
+          
+          <div class="view-rides">
+            <p class = "sub-title-text">View RIDES</p>
+
+            <form class="book-rides-form">
+              <!-- Ride history  -->
+              <p>
+                <label>Ride History</label>
+                <div class="fancy-link">
+                  <p class="link-text">View ride history</p>
+                  <a href="rideHistory.html" class="compress-btn">
+                    <img src="Images/arrow.png" class="compress-btn">
+                  </a>
                 </div>
-        
-                <div class="mainbody-right">
-                    <div class="container">
-                        <h1 class = "link-text">Link Your Card</h1>
-                        <p class = "card-details">Card Details</p>
+              </p>
 
-                        <form id="credit-debit-form">
-                            <label for="cardNumber">Card Number :</label>
-                            <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number">
-                            
-                            <label for="expiryDate">Expiry Date :</label>
-                            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY">
-                            
-                            <label for="cvv">CVV :</label>
-                            <input type="text" id="cvv" name="cvv" placeholder="Enter CVV">
-                            
-                            <label for="cardholderName">Cardholder Name :</label>
-                            <input type="text" id="cardholderName" name="cardholderName" placeholder="Enter Cardholder Name">
-                             
-                            <button type="submit">Add Payment Method</button>
-                        </form>
-
-                    </div>
-
+              <!-- Upcoming Rides  -->
+              <p>
+                <label>Upcomding Rides</label>
+                <div class="fancy-link">
+                  <p class="link-text">View upcoming rides</p>
+                  <a href="upcomingRides.html" class="compress-btn">
+                    <img src="Images/arrow.png" class="compress-btn">
+                  </a>
                 </div>
-            </div>
+              </p>
+
+              <!-- Pending Rides  -->
+              <p>
+                <label>Scheduled Rides</label>
+                <div class="fancy-link">
+                  <p class="link-text">View scheduled rides</p>
+                  <a href="scheduledRides.html" class="compress-btn">
+                    <img src="Images/arrow.png" class="compress-btn">
+                  </a>
+                </div>
+              </p>
+
+              <!--TODO Accept Driver  -->
+              <p>
+                <label>Accept driver</label>
+                <div class="fancy-link">
+                  <p class="link-text">WHAT DOES THIS LEAD TO??</p>
+                  <a href="rideHistory.html" class="compress-btn">
+                    <img src="Images/arrow.png" class="compress-btn">
+                  </a>
+                </div>
+              </p>
+           
+              
+            </form>
+
+
+          </div>
         </div>
+
 
         <footer>
             <div class = "flex-left">
@@ -128,7 +171,7 @@
                         <li><a href = "aboutUs.html" class = "aboutUs" id = "aboutUs">About Us</a></li> 
                         <li><a href="blog.html" class = "blog" id = "blog">Blog</a></li> 
                         <li><a href="careers.html" class = "career" id = "career">Careers</a></li>
-                        <li><a href="community.html" class = "community" id = "community">Community</a></li>
+                        <li><a href="community.html" class = "community" id = "community">Community</a></li> 
                         <li><a href="faq.html" class = "faq" id = "faq">FAQ</a></li> 
                         <li><a href="sitemap.html" class = "sitemap" id = "sitemap">Sitemap</a></li> 
                     </ul> 
@@ -144,8 +187,5 @@
             </div>
 
         </footer>
-
-
-
     </body>
 </html>

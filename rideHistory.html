@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head> 
-        <title>Add Credit Card Info</title>
-        <link rel="stylesheet" href="creditCard.css">
+        <title>Ride history</title>
+        <link rel="stylesheet" href="rideHistory.css">
     </head>
 
     <body>
@@ -43,52 +43,62 @@
                 </div>
             </div>
         </nav> 
-        
-        <div class="mainbody">
-            <div class="combined">
-                <div class="mainbody-left">
-                    <h1 class="add-pm">Add Payment Methods</h1>
-                    <div class="credit-card">
-                        <p class="cc-text">Debit or Credit Cards</p>
-                        <a href="creditCard.html" class = "compress-btn">
-                            <img src="Images/Arrow.png" class="compress-btn">
-                        </a>                 
-                    </div>
-                    <p></p>
-                    <div class="credit-card">
-                        <p class="cc-text">Other payment methods</p>
-                        <a href="otherPaymentMethods.html" class = "compress-btn">
-                            <img src="Images/Arrow.png" class="compress-btn">
-                        </a>                 
-                    </div>
-                </div>
-        
-                <div class="mainbody-right">
-                    <div class="container">
-                        <h1 class = "link-text">Link Your Card</h1>
-                        <p class = "card-details">Card Details</p>
+        <div class = "ride-history-page">
+      
+          <div class= "rides-container" >
+            <p class="sub-title-text">Ride History</p>
 
-                        <form id="credit-debit-form">
-                            <label for="cardNumber">Card Number :</label>
-                            <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number">
-                            
-                            <label for="expiryDate">Expiry Date :</label>
-                            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY">
-                            
-                            <label for="cvv">CVV :</label>
-                            <input type="text" id="cvv" name="cvv" placeholder="Enter CVV">
-                            
-                            <label for="cardholderName">Cardholder Name :</label>
-                            <input type="text" id="cardholderName" name="cardholderName" placeholder="Enter Cardholder Name">
-                             
-                            <button type="submit">Add Payment Method</button>
-                        </form>
-
-                    </div>
-
-                </div>
+            <div class="ride-dropdown">
+              <div class="ride-summary">
+                <p class="summary-text">DD/MM/YYYY - to Location</p>
+                <a href="rideHistory.html" class="compress-btn">
+                  <img src="Images/Arrow.png" class="compress-btn">
+                </a>
+              </div>
             </div>
+
+            <div class="ride-dropdown">
+              <div class="ride-summary">
+                <p class="summary-text">DD/MM/YYYY - to Location</p>
+                <a href="rideHistory.html" class="compress-btn">
+                  <img src="Images/Arrow.png" class="compress-btn">
+                </a>
+              </div>
+            </div>
+
+            <div class="ride-dropdown">
+              <div class="ride-summary">
+                <p class="summary-text">DD/MM/YYYY - to Location</p>
+                <a href="rideHistory.html" class="compress-btn">
+                  <img src="Images/Arrow.png" class="compress-btn">
+                </a>
+              </div>
+            </div>
+
+            <div class="bottom-container">
+
+              <div class="book-ride-prompt-container">
+                <p class="book-ride-prompt-text">
+                  Need another ride?
+                </p>
+              </div>
+
+              <button type="submit" href="ride.html" id="toRide">Book a ride now</button>
+
+            </div>
+          
+          </div>
+
         </div>
+
+        <script>
+          document.getElementById("toRide").onclick = function()
+          {
+            window.location.href = "ride.html"
+
+          }
+        </script>
+
 
         <footer>
             <div class = "flex-left">
@@ -128,7 +138,7 @@
                         <li><a href = "aboutUs.html" class = "aboutUs" id = "aboutUs">About Us</a></li> 
                         <li><a href="blog.html" class = "blog" id = "blog">Blog</a></li> 
                         <li><a href="careers.html" class = "career" id = "career">Careers</a></li>
-                        <li><a href="community.html" class = "community" id = "community">Community</a></li>
+                        <li><a href="community.html" class = "community" id = "community">Community</a></li> 
                         <li><a href="faq.html" class = "faq" id = "faq">FAQ</a></li> 
                         <li><a href="sitemap.html" class = "sitemap" id = "sitemap">Sitemap</a></li> 
                     </ul> 
@@ -144,8 +154,5 @@
             </div>
 
         </footer>
-
-
-
     </body>
 </html>
