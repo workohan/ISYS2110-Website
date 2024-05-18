@@ -21,6 +21,7 @@
                         <div class="dropdown-content">
                             <a href="drive.html">Drive</a>
                             <a href="ride.html">Ride</a>
+                            <a href="neighbour.html">Neighbour</a>
                         </div>
                     </li>
                     <li><a href="contact.html" class = "contact" id = "contact">Contact</a></li> 
@@ -45,7 +46,60 @@
         </nav> 
         
         <div class = "mainbody">
-            <h1>Share your RIDE, Share your Dream</h1>
+            <div class = "container">
+                <div class = "container-left">
+                    <h1 class = "header">Create a Drive</h1>
+                    <form class="form">
+                        <p>
+                            <label for="starting-point"><b>Starting Point :</b></label>
+                            <input type="text" placeholder="Enter Starting Point" name="starting-point" id="starting-point" required>
+                        </p>
+                        <p>
+                            <label for="destination"><b>Destination :</b></label>
+                            <input type="text" placeholder="Enter Destination" name="destination" id="destination" required>
+                        </p>
+                        <p>
+                            <label for="date"><b>Date :</b></label>
+                            <input type="date" placeholder="Date of Drive: DD/MM/YYYY" name="date" id="date" required>
+                        </p>
+                        <p>
+                            <label for="time"><b>Time :</b></label>
+                            <input type="time" placeholder="Time of Drive: HH:MM am/pm" name="destination" id="destination" required>
+                        </p>
+                        <p>
+                            <label for="max-pass"><b>Maximum Number of Passengers :</b></label>
+                            <input type="number" placeholder="Maximum number of passengers" name="max-pass" id="max-pass" required>
+                        </p>
+                        <button type="submit">Confirm Drive</button>
+                    </form>
+
+                </div>
+
+                <div class = "container-right">
+                    <h1 class = "header">View Drives</h1>
+
+                    <div class="options">
+                        <p class="option-1">Current Drive</p>
+                        <a href="driver-currentDrive.html" class = "collapse-btn">
+                            <img src="Images/collapse-btn.png" class="collapse-btn">
+                        </a>                    
+                    </div>
+
+                    <div class="options">
+                        <p class="option-2">Upcoming Drive</p>
+                        <a href="driver-upcomingDrive.html" class = "collapse-btn">
+                            <img src="Images/collapse-btn.png" class="collapse-btn">
+                        </a>                    
+                    </div>
+
+                    <div class="options">
+                        <p class="option-3">Drives History</p>
+                        <a href="driver-driveHistory.html" class = "collapse-btn">
+                            <img src="Images/collapse-btn.png" class="collapse-btn">
+                        </a>                    
+                    </div>
+                </div>
+            </div>
         </div>
 
         <footer>
@@ -78,6 +132,8 @@
                         <li><a class = "heading-text" id = "product">Product</a></li>
                         <li><a href = "ride.html" class = "ride" id = "ride">Ride</a></li> 
                         <li><a href="drive.html" class = "drive" id = "drive">Drive</a></li> 
+                        <li><a href="neighbour.html" class = "neighbour" id = "neighbour">Neighbour</a></li> 
+
                     </ul> 
                 </div>
                 <div class = "company">

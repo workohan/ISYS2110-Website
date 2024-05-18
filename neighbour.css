@@ -17,7 +17,7 @@ body {
     font-weight: 550;
 }
 
-.profile {
+.neighbour, .service{
     font-weight : bold;
 }
 
@@ -112,136 +112,69 @@ nav ul li + li {
 
 /* mainbody */
 .mainbody {
-    padding: 60px 150px;
-    height: auto;
-    font-family: sans-serif;
-    letter-spacing: 1px;
-    
-}
-
-/* left mainbody */
-.mainbody-left {
-    display: inline-block;
-    padding: 30px 100px;
-}
-
-.combined {
-    background-color: #FFFFFF;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    color: #231F20;
+}
+
+.container {
+    display: flex;
+    width: 80%;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-    border-radius: 7px;
-
+    padding: 50px;
 }
 
-.accountInfo-text {
-    color: #231F20;
+.established, .pending {
+    width: 50%;
+    padding: 20px;
 }
 
-.heading-text{
-    font-size: 17px;
-    color: #231F20;
-    font-weight: 600;
-    margin-top: 10px;
-}
-
-.profileImage-img {
-    width : 130px;
-}
-
-.container-info {
-    display: block;
-    justify-content: center; /* Center the box horizontally */
-}
-
-.placeholder {
-    font-size: 15px;
-    margin-bottom: 10px;
-    font-weight: 550;
-}
-
-.text-box {
-    width: 250px;
-    height: 30px;
-    padding: 15px;
-    border: 1px solid #231F20;
-    border-radius: 7px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-}
-
-.text-box p {
-    margin: 0;
-    margin-top: 6px;
-    color: #231F20;
-    font-size: 15px;
-}
-
-/* right mainbody */
-.mainbody-right {
-    display: inline-block;
-    position: relative;
-    padding: 100px 150px;
-}
-
-.special-req {
+.established {
     display: flex;
     flex-direction: column;
+    margin-left: 2px;
+    border-right: 1px solid #ddd;
 }
 
-.special-req label {
-    font-size : 15px;
-    font-weight: 550;
-    margin-bottom: 15px;
+.pending {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
 }
-  
-input[type="requirements"] {
-    padding: 12px;
-    width: 300px;;
-    border: 1px solid #231F20;
+.header {
+    font-size: 24px;
+}
+
+.neighbours {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    border: 1px solid #ccc;
     border-radius: 7px;
     box-sizing: border-box;
-    color: #231F20;
-    height: 50px;
+    background-color: #ffffff;
 }
 
-button[onclick="addItem()"] {
-    padding: 15px;
-    background-color: #B09CFC;
-    color: #231F20;
-    font-weight: bold;
-    border: none;
-    border-radius: 7px;
-    cursor: pointer;
+.neighbours .option-text {
     font-size: 16px;
-    margin: 15px 0px 10px;
-    width: 300px;
-    font-size: 15px;
 }
 
-li {
-    margin-bottom: 7px;
+.neighbours .collapse-btn img {
+    width: 30px;
+    height: 30px;
+    right: 0;
+    margin-top: 5px;
 }
 
-button[onclick="addItem()"]:hover {
-    background-color: #8C6EFA;
-}
-
-button[onclick="navigateToDriver()"] {
-    padding: 15px;
-    background-color: #B09CFC;
-    color: #231F20;
-    font-weight: bold;
-    border: none;
-    border-radius: 7px;
-    cursor: pointer;
-    font-size: 16px;
-    margin: 0px 0px 10px;
-    width: 300px;
-    font-size: 15px;
-}
-
-button[onclick="navigateToDriver()"]:hover {
-    background-color: #8C6EFA;
+.container-right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
 }
 
 /* footer */

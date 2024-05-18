@@ -21,6 +21,7 @@
                         <div class="dropdown-content">
                             <a href="drive.html">Drive</a>
                             <a href="ride.html">Ride</a>
+                            <a href="neighbour.html">Neighbour</a>
                         </div>
                     </li>
                     <li><a href="contact.html" class = "contact" id = "contact">Contact</a></li> 
@@ -45,47 +46,26 @@
         </nav> 
         
         <div class="mainbody">
-            <div class="combined">
-                <div class="mainbody-left">
-                    <h1 class="add-pm">Add Payment Methods</h1>
-                    <div class="credit-card">
-                        <p class="cc-text">Debit or Credit Cards</p>
-                        <a href="creditCard.html" class = "compress-btn">
-                            <img src="Images/Arrow.png" class="compress-btn">
-                        </a>                 
-                    </div>
-                    <p></p>
-                    <div class="credit-card">
-                        <p class="cc-text">Other payment methods</p>
-                        <a href="otherPaymentMethods.html" class = "compress-btn">
-                            <img src="Images/Arrow.png" class="compress-btn">
-                        </a>                 
-                    </div>
-                </div>
-        
-                <div class="mainbody-right">
-                    <div class="container">
-                        <h1 class = "link-text">Link Your Card</h1>
-                        <p class = "card-details">Card Details</p>
+            <div class="mainbody-right">
+                <div class="container">
+                    <h1 class = "link-text">Link Your Card</h1>
+                    <p class = "card-details">Card Details</p>
 
-                        <form id="credit-debit-form">
-                            <label for="cardNumber">Card Number :</label>
-                            <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number">
+                    <form>
+                        <label for="cardNumber">Card Number :</label>
+                        <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number">
+                        
+                        <label for="expiryDate">Expiry Date :</label>
+                        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY">
+                        
+                        <label for="cvv">CVV :</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="Enter CVV">
+                        
+                        <label for="cardholderName">Cardholder Name :</label>
+                        <input type="text" id="cardholderName" name="cardholderName" placeholder="Enter Cardholder Name">
                             
-                            <label for="expiryDate">Expiry Date :</label>
-                            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY">
-                            
-                            <label for="cvv">CVV :</label>
-                            <input type="text" id="cvv" name="cvv" placeholder="Enter CVV">
-                            
-                            <label for="cardholderName">Cardholder Name :</label>
-                            <input type="text" id="cardholderName" name="cardholderName" placeholder="Enter Cardholder Name">
-                             
-                            <button type="submit">Add Payment Method</button>
-                        </form>
-
-                    </div>
-
+                        <button type="submit">Add Payment Method</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -120,6 +100,7 @@
                         <li><a class = "heading-text" id = "product">Product</a></li>
                         <li><a href = "ride.html" class = "ride" id = "ride">Ride</a></li> 
                         <li><a href="drive.html" class = "drive" id = "drive">Drive</a></li> 
+                        <li><a href="neighbour.html" class = "neighbour" id = "neighbour">Neighbour</a></li> 
                     </ul> 
                 </div>
                 <div class = "company">
@@ -144,8 +125,5 @@
             </div>
 
         </footer>
-
-
-
     </body>
 </html>

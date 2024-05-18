@@ -112,11 +112,10 @@ nav ul li + li {
 
 /* mainbody */
 .mainbody {
-    padding: 60px 150px;
+    padding: 70px 200px;
     height: auto;
     font-family: sans-serif;
     letter-spacing: 1px;
-    
 }
 
 /* left mainbody */
@@ -125,12 +124,17 @@ nav ul li + li {
     padding: 30px 100px;
 }
 
+.prev-btn img {
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+}
+
 .combined {
     background-color: #FFFFFF;
     display: flex;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     border-radius: 7px;
-
 }
 
 .accountInfo-text {
@@ -145,12 +149,12 @@ nav ul li + li {
 }
 
 .profileImage-img {
-    width : 130px;
+    width : 200px;
 }
 
 .container-info {
     display: block;
-    justify-content: center; /* Center the box horizontally */
+    justify-content: center;
 }
 
 .placeholder {
@@ -243,6 +247,41 @@ button[onclick="navigateToDriver()"] {
 button[onclick="navigateToDriver()"]:hover {
     background-color: #8C6EFA;
 }
+
+.neighbor-action {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.accept-btn,
+.reject-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.accept-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.accept-btn:hover {
+    background-color: #45a049;
+}
+
+.reject-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.reject-btn:hover {
+    background-color: #d32f2f;
+}
+
 
 /* footer */
 footer {

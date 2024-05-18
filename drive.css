@@ -17,7 +17,7 @@ body {
     font-weight: 550;
 }
 
-.service {
+.service{
     font-weight : bold;
 }
 
@@ -112,13 +112,99 @@ nav ul li + li {
 
 /* mainbody */
 .mainbody {
-    background-color: white;
-    padding: 10px;
-    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    color: #231F20;
 }
 
-h1 { 
-    color : black;
+.container {
+    display: flex;
+    width: 80%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.container-left, .container-right {
+    width: 50%;
+    padding: 20px;
+}
+
+.container-left {
+    border-right: 1px solid #ddd;
+}
+
+.header {
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+    padding: 12px;
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #B09CFC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    margin-bottom: 10px;
+    width: 90%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #8C6EFA;
+  }
+
+.container-right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.options .option-text {
+    font-size: 16px;
+}
+
+.options .collapse-btn img {
+    width: 30px;
+    height: 30px;
+    right: 0;
+    margin-top: 5px;
 }
 
 /* footer */
