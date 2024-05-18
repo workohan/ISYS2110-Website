@@ -1,10 +1,9 @@
 <html>
 
 	<head>
-		<title>Driver Ride</title>
+		<title>Remove Users</title>
 		<link rel="stylesheet" href="contact.css">
 	</head>
-
 <body>
 	<nav> 
         <div class = "navbar">
@@ -43,11 +42,25 @@
             </div>
         </div>
     </nav> 
-	<h2>This is your trip from <a class="driver_from">Hornsby</a> to <a class="driver_to">Campbelltown</a></h2>
-	<h3>20th June 2024, leaving at 8:00am</h3>
+	<form class = "driver_new_ride_form">
+		<label for="remove_username">Remove a User</label><br>
+		<input id="remove_username" list="user_suggestions">
+			<datalist id="user_suggestions">
+			<option value="DarkRider1">
+			<option value="HogRider">
+			<option value="DogLover29">
+			<option value="JoshuaSmith2003">
+			<option value="JewelDriver">
+			<option value="DarkRider2">
+			<option value="DamagedDragon">
+			<option value="DarlingTraveller920">
+			<option value="DarkLordSlayerOfDrivers">
+</datalist>
+	</form>
+	<a href = "main.html">
+		<button class = "driver_submit_new_ride">Submit</button>
+	</a>
 </body>
-<a href = "driver_edit_ride.html">
-	<button class = "driver_edit_ride">Edit Details</button>
-</a>
+
 
 </html>

@@ -142,6 +142,7 @@ nav ul li + li {
     border-radius: 15px;
     width: 300px;
     margin: 20px;
+    height: auto;
 }
 
 .support {
@@ -156,6 +157,9 @@ nav ul li + li {
     border: 1px solid #ccc;
     border-radius: 15px;
     width: 30px;
+    height: 30px;
+    align-items: center;
+
 }
 
 .image img{
@@ -236,6 +240,7 @@ nav ul li + li {
     border-left: 3px solid #08ECC4;
     padding: 0 20px;
     border-radius: 5px 0px 0px 5px;
+    font-size: 16px;
 }
 
 .faq-answer p {

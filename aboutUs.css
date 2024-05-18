@@ -112,27 +112,76 @@ nav ul li + li {
 
 /* mainbody */
 .mainbody {
-    width: auto;
-    height: auto;
-    background-color : white;
-    padding : 50px 100px 50px;
+    background-color: white;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    padding: 70px;
+    color: #231F20;
 }
 
-.about_div {
+.world-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: -40px;
+}
+
+.map {
+    width: 50%;
+}
+
+.heading {
     text-align: center;
-    width: 100%;
-    opacity: 55%;
-    font-size: 20px;
 }
 
-.main_text {
+.heading h1 { 
+    color : #231F20;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.heading p {
+    opacity: 0.9;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    border-bottom: 1px solid #ddd;
+}
+
+.combined {
+    width: 50%;
+    padding: 30px;
+}
+
+.title-text {
+    text-align: center;
     font-size: 35px;
-    text-align: center;
-    letter-spacing: 3px;
-    font-weight: bold;
-    max-width: 900px;
-    margin: 0 auto; 
-    margin-bottom: 20px;
+}
+
+.desc-para {
+    text-align: justify;
+    font-size: 16px;
+}
+
+.members {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    border-bottom: 1px solid #ddd;
+    margin: 50px 0px 0px 40px;
+    padding: 50px;
+}
+
+.team {
+    width: 30%;
 }
 
 .carousel {
@@ -146,7 +195,6 @@ nav ul li + li {
     align-items: center;
     overflow: hidden;
 }
-
 
 .slide {
     flex: 0 0 auto;
@@ -167,6 +215,7 @@ nav ul li + li {
     margin: 0;
     display: inline-flex;
     align-items: center;
+    opacity: 0.85;
 }
 
 #prevButton img, #nextButton img {
@@ -183,6 +232,50 @@ nav ul li + li {
 
 .student_img {
     width: 350px;
+    border-radius: 20px;
+}
+
+.join {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+
+.join:last-child {
+    border-bottom: none;
+}
+
+.join-tgr {
+    text-align: center;
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+.values-section {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.values-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.join-tgr {
+    text-align: center;
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+.values-list {
+    list-style-type: none;
+}
+
+.catchphrase {
+    font-weight: 600;
 }
 
 /* footer */

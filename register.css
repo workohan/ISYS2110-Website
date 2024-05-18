@@ -2,7 +2,6 @@ body {
   margin : 0; 
   letter-spacing : 0.5px;
   font-family : sans-serif;
-  background-color : #A6FFEF;
 }
 
 /* navigation bar */
@@ -124,7 +123,7 @@ nav ul li + li {
 .register-form {
   padding : 65px;
   background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
 
 .register-text {
