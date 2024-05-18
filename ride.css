@@ -118,7 +118,6 @@ nav ul li + li {
   padding: 100px;
   color: #231F20;
   letter-spacing: 1px;
-
 }
 
 .container {
@@ -161,8 +160,56 @@ input[type="number"] {
   border-radius: 7px;
   box-sizing: border-box;
   margin-top: 5px;
+  font-size: 14px;
 }
 
+/* contribute button */
+.contribute_dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+/* Style for the dropdown link */
+.contribute_dropdown .dropdown-link {
+  color: #231F20;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  padding: 12px;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* Style for the dropdown content (hidden by default) */
+.contribute_dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+/* Style for the dropdown items */
+.contribute_dropdown .dropdown-content a {
+  color: #333;
+  padding: 12px 30px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Style for the dropdown items on hover */
+.contribue_dropdown .dropdown-content a:hover {
+  background-color: #f9f9f9;
+}
+
+/* submit button */
 button[type="submit"] {
   padding: 10px;
   background-color: #B09CFC;

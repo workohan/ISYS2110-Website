@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head> 
-        <title>Driver's Page</title>
+        <title>Rider's Page</title>
         <link rel="stylesheet" href="ride.css">
     </head>
 
@@ -66,7 +66,20 @@
                             <label for="time"><b>Time :</b></label>
                             <input type="time" placeholder="Time of Ride: HH:MM am/pm" name="time" id="time" required>
                         </p>
-                        <button type="submit">Confirm Ride</button>
+
+                        <p>
+                          <label for="contribute"><b>Contribute by :</b></label>
+                          <div class="contribute_dropdown">
+                            <a href="#" class="dropdown-link">Ways to Contribute</a>
+                            <div class="dropdown-content">
+                                <a href="#">Splitting Fuel</a>
+                                <a href="#">Paying by Distance</a>
+                                <a href="#">Paying by Time Taken</a>
+                            </div>
+                        </p>
+                      </div>
+
+                        <button class = "submit-form" type="submit">Confirm Ride</button>
                     </form>
 
                 </div>
