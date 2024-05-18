@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head> 
-        <title>Rider's Page</title>
-        <link rel="stylesheet" href="ride.css">
+        <title>Ride history-dropdown</title>
+        <link rel="stylesheet" href="../displayRides.css">
     </head>
 
     <body>
@@ -16,7 +16,7 @@
                     <li class="dropdown">
                         <div class = "service">
                             <a href="#">Services</a>
-                            <img src = "Images/down-arrow.png" class = "down-arrow" id = "down-arrow">
+                            <img src = "../Images/down-arrow.png" class = "down-arrow" id = "down-arrow">
                         </div>
                         <div class="dropdown-content">
                             <a href="drive.html">Drive</a>
@@ -33,7 +33,7 @@
                     <li class="dropdown">
                         <div class = "profile">
                             <a href="#">Profile</a>
-                            <img src = "Images/down-arrow.png" class = "down-arrow" id = "down-arrow">
+                            <img src = "../Images/down-arrow.png" class = "down-arrow" id = "down-arrow">
                         </div>
                         <div class="dropdown-content">
                             <a href="profile.html">Account Info</a>
@@ -43,94 +43,72 @@
                 </div>
             </div>
         </nav> 
-        
-        <div class = "book-ride-page">
+        <div class = "ride-history-page">
       
-          <div class= "book-rides" >
-            <p class="sub-title-text">Book a RIDE</p>
+          <div class= "rides-container" id="firstDropdown">
+            <p class="sub-title-text">Ride History</p>
 
-            <form>
-              <p>
-                <label for="pickupPoint">Pickup Point</label>
-                <input type="text" placeholder="Pick-up location" name="pickupPoint" id="pickupPoint" required>
-              </p>
-                
-              <p>
-                <label for="destination">Destination</label>
-                <input type="text" placeholder="Destination" name="destination" id="destination" required>
-              </p>
+            <!--  -->
+            <div class="ride-dropdown-container" style="display: flex; margin-bottom: 150px">
+              <div class="ride-inline-summary">
+                <p class="summary-text">DD/MM/YYYY</p>
+                <a href="../rideHistory.html" class="compress-btn">
+                  <img src="../Images/Arrow.png" class="compress-btn" style="rotate: 90deg;">
+                </a>
+              </div>
 
-              <p>
-                <label for="date">Date</label>
-                <input type="date" placeholder="Date of pickup" name="date" id="date" required>
-              </p>
+              <div class="ride-dropdown-details">
+                asdfasdf
+              </div>
+            </div>
+            <!--  -->
 
-              <p>
-                <label for="time">Time</label>
-                <input type="text" placeholder="Time of pickup" name="time" id="time" required>
-              </p>
+            <div class="ride-dropdown-container">
+              <div class="ride-inline-summary">
+                <p class="summary-text">DD/MM/YYYY - to Location</p>
+                <a href="rideHistory.html" class="compress-btn">
+                  <img src="../Images/Arrow.png" class="compress-btn">
+                </a>
+              </div>
+            </div>
 
-              <button type="submit">Confirm Booking</button>
-            </form>
-            
+            <div class="ride-dropdown-container">
+              <div class="ride-inline-summary">
+                <p class="summary-text">DD/MM/YYYY - to Location</p>
+                <a href="rideHistory.html" class="compress-btn">
+                  <img src="../Images/Arrow.png" class="compress-btn">
+                </a>
+              </div>
+            </div>
 
-          </div>
+            <div class="bottom-container">
+
+              <div class="book-ride-prompt-container">
+                <p class="book-ride-prompt-text">
+                  Need another ride?
+                </p>
+              </div>
+
+              <button type="submit" href="ride.html" id="toRide">Book a ride now</button>
+
+            </div>
           
-          
-          <div class="view-rides">
-            <p class = "sub-title-text">View RIDES</p>
-
-            <form class="book-rides-form">
-              <!-- Ride history  -->
-              <p>
-                <label>Ride History</label>
-                <div class="fancy-link">
-                  <p class="link-text">View ride history</p>
-                  <a href="rideHistory.html" class="compress-btn">
-                    <img src="Images/arrow.png" class="compress-btn">
-                  </a>
-                </div>
-              </p>
-
-              <!-- Upcoming Rides  -->
-              <p>
-                <label>Upcoming Rides</label>
-                <div class="fancy-link">
-                  <p class="link-text">View upcoming rides</p>
-                  <a href="upcomingRides.html" class="compress-btn">
-                    <img src="Images/arrow.png" class="compress-btn">
-                  </a>
-                </div>
-              </p>
-
-              <!-- Pending Rides  -->
-              <p>
-                <label>Scheduled Rides</label>
-                <div class="fancy-link">
-                  <p class="link-text">View scheduled rides</p>
-                  <a href="scheduledRides.html" class="compress-btn">
-                    <img src="Images/arrow.png" class="compress-btn">
-                  </a>
-                </div>
-              </p>
-
-              <!--TODO Accept Driver  -->
-              <p>
-                <label>Accept driver</label>
-                <div class="fancy-link">
-                  <p class="link-text">WHAT DOES THIS LEAD TO??</p>
-                  <a href="rideHistory.html" class="compress-btn">
-                    <img src="Images/arrow.png" class="compress-btn">
-                  </a>
-                </div>
-              </p>
-           
-              
-            </form>
-
-
           </div>
+
         </div>
+
+        <script>
+          document.getElementById("toRide").onclick = function()
+          {
+            window.location.href = "ride.html"
+
+          }
+
+          document.getElementById("firstDropdown").onclick = function()
+          {
+            window.location.href = "rideHistoryDropdown.html"
+          }
+        </script>
 
 
         <footer>
@@ -142,16 +120,16 @@
                     <p class = "follow-us">Follow us:</p>
                     <div class = "socmed">
                         <div class = "socmedlogo">
-                            <img src = "Images/instagram.png" alt = "iglogo" id = "iglogo">
+                            <img src = "../Images/instagram.png" alt = "iglogo" id = "iglogo">
                         </div>
                         <div class = "socmedlogo">
-                            <img src = "Images/facebook.png" alt = "fblogo" id = "fblogo">
+                            <img src = "../Images/facebook.png" alt = "fblogo" id = "fblogo">
                         </div>
                         <div class = "socmedlogo">
-                            <img src = "Images/twitter.png" alt = "twlogo" id = "twlogo">
+                            <img src = "../Images/twitter.png" alt = "twlogo" id = "twlogo">
                         </div>
                         <div class = "socmedlogo">
-                            <img src = "Images/linkedin.png" alt = "linkedinlogo" id = "linkedinlogo">
+                            <img src = "../Images/linkedin.png" alt = "linkedinlogo" id = "linkedinlogo">
                         </div>
                     </div>
                 </div>

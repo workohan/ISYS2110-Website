@@ -2,7 +2,7 @@
 <html>
     <head> 
         <title>Ride history</title>
-        <link rel="stylesheet" href="rideHistory.css">
+        <link rel="stylesheet" href="displayRides.css">
     </head>
 
     <body>
@@ -45,11 +45,20 @@
         </nav> 
         <div class = "ride-history-page">
       
-          <div class= "rides-container" >
+          <div class= "rides-container" id="firstDropdown">
             <p class="sub-title-text">Ride History</p>
 
-            <div class="ride-dropdown">
-              <div class="ride-summary">
+            <div class="ride-dropdown-container">
+              <div class="ride-inline-summary">
+                <p class="summary-text">DD/MM/YYYY - to Location</p>
+                <a href="Dropdowns/rideHistoryDropdown.html" class="compress-btn">
+                  <img src="Images/Arrow.png" class="compress-btn">
+                </a>
+              </div>
+            </div>
+
+            <div class="ride-dropdown-container">
+              <div class="ride-inline-summary">
                 <p class="summary-text">DD/MM/YYYY - to Location</p>
                 <a href="rideHistory.html" class="compress-btn">
                   <img src="Images/Arrow.png" class="compress-btn">
@@ -57,17 +66,8 @@
               </div>
             </div>
 
-            <div class="ride-dropdown">
-              <div class="ride-summary">
-                <p class="summary-text">DD/MM/YYYY - to Location</p>
-                <a href="rideHistory.html" class="compress-btn">
-                  <img src="Images/Arrow.png" class="compress-btn">
-                </a>
-              </div>
-            </div>
-
-            <div class="ride-dropdown">
-              <div class="ride-summary">
+            <div class="ride-dropdown-container">
+              <div class="ride-inline-summary">
                 <p class="summary-text">DD/MM/YYYY - to Location</p>
                 <a href="rideHistory.html" class="compress-btn">
                   <img src="Images/Arrow.png" class="compress-btn">
@@ -96,6 +96,11 @@
           {
             window.location.href = "ride.html"
 
+          }
+
+          document.getElementById("firstDropdown").onclick = function()
+          {
+            window.location.href = "rideHistoryDropdown.html"
           }
         </script>
 
