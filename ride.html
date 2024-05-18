@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head> 
-        <title>Rider's Page</title>
+        <title>Driver's Page</title>
         <link rel="stylesheet" href="ride.css">
     </head>
 
@@ -21,6 +21,7 @@
                         <div class="dropdown-content">
                             <a href="drive.html">Drive</a>
                             <a href="ride.html">Ride</a>
+                            <a href="neighbour.html">Neighbour</a>
                         </div>
                     </li>
                     <li><a href="contact.html" class = "contact" id = "contact">Contact</a></li> 
@@ -44,94 +45,69 @@
             </div>
         </nav> 
         
-        <div class = "book-ride-page">
-      
-          <div class= "book-rides" >
-            <p class="sub-title-text">Book a RIDE</p>
+        <div class = "mainbody">
+            <div class = "container">
+                <div class = "container-left">
+                    <h1 class = "header">Book a Ride</h1>
+                    <form class="form">
+                        <p>
+                            <label for="starting-point"><b>Pickup Point :</b></label>
+                            <input type="text" placeholder="Enter Pickup Location" name="pickup-location" id="pickup-location" required>
+                        </p>
+                        <p>
+                            <label for="destination"><b>Destination :</b></label>
+                            <input type="text" placeholder="Enter Destination" name="destination" id="destination" required>
+                        </p>
+                        <p>
+                            <label for="date"><b>Date :</b></label>
+                            <input type="date" placeholder="Date of Ride: DD/MM/YYYY" name="date" id="date" required>
+                        </p>
+                        <p>
+                            <label for="time"><b>Time :</b></label>
+                            <input type="time" placeholder="Time of Ride: HH:MM am/pm" name="time" id="time" required>
+                        </p>
+                        <button type="submit">Confirm Ride</button>
+                    </form>
 
-            <form>
-              <p>
-                <label for="pickupPoint">Pickup Point</label>
-                <input type="text" placeholder="Pick-up location" name="pickupPoint" id="pickupPoint" required>
-              </p>
-                
-              <p>
-                <label for="destination">Destination</label>
-                <input type="text" placeholder="Destination" name="destination" id="destination" required>
-              </p>
-
-              <p>
-                <label for="date">Date</label>
-                <input type="date" placeholder="Date of pickup" name="date" id="date" required>
-              </p>
-
-              <p>
-                <label for="time">Time</label>
-                <input type="text" placeholder="Time of pickup" name="time" id="time" required>
-              </p>
-
-              <button type="submit">Confirm Booking</button>
-            </form>
-            
-
-          </div>
-          
-          
-          <div class="view-rides">
-            <p class = "sub-title-text">View RIDES</p>
-
-            <form class="book-rides-form">
-              <!-- Ride history  -->
-              <p>
-                <label>Ride History</label>
-                <div class="fancy-link">
-                  <p class="link-text">View ride history</p>
-                  <a href="rideHistory.html" class="compress-btn">
-                    <img src="Images/arrow.png" class="compress-btn">
-                  </a>
                 </div>
-              </p>
 
-              <!-- Upcoming Rides  -->
-              <p>
-                <label>Upcoming Rides</label>
-                <div class="fancy-link">
-                  <p class="link-text">View upcoming rides</p>
-                  <a href="upcomingRides.html" class="compress-btn">
-                    <img src="Images/arrow.png" class="compress-btn">
-                  </a>
+                <div class = "container-right">
+                    <h1 class = "header">View Rides</h1>
+
+                    <p class = "options-header">Current Ride</p>
+                    <div class="options">
+                        <p class="option-1">View current ride</p>
+                        <a href="rider-currentRide.html" class = "collapse-btn">
+                            <img src="Images/collapse-btn.png" class="collapse-btn">
+                        </a>                    
+                    </div>
+
+                    <p class = "options-header">Upcoming Rides</p>
+                    <div class="options">
+                        <p class="option-2">View upcoming rides</p>
+                        <a href="rider-upcomingRides.css" class = "collapse-btn">
+                            <img src="Images/collapse-btn.png" class="collapse-btn">
+                        </a>                    
+                    </div>
+
+                    <p class = "options-header">Ride History</p>
+                    <div class="options">
+                        <p class="option-3">View ride history</p>
+                        <a href="rider-rideHistory.html" class = "collapse-btn">
+                            <img src="Images/collapse-btn.png" class="collapse-btn">
+                        </a>                    
+                    </div>
+
+                    <p class = "options-header">Pending Ride</p>
+                    <div class="options">
+                        <p class="option-4">View pending ride</p>
+                        <a href="rider-pendingRide.html" class = "collapse-btn">
+                            <img src="Images/collapse-btn.png" class="collapse-btn">
+                        </a>                    
+                    </div>
                 </div>
-              </p>
-
-              <!-- Pending Rides  -->
-              <p>
-                <label>Scheduled Rides</label>
-                <div class="fancy-link">
-                  <p class="link-text">View scheduled rides</p>
-                  <a href="scheduledRides.html" class="compress-btn">
-                    <img src="Images/arrow.png" class="compress-btn">
-                  </a>
-                </div>
-              </p>
-
-              <!--TODO Accept Driver  -->
-              <p>
-                <label>Accept driver</label>
-                <div class="fancy-link">
-                  <p class="link-text">WHAT DOES THIS LEAD TO??</p>
-                  <a href="rideHistory.html" class="compress-btn">
-                    <img src="Images/arrow.png" class="compress-btn">
-                  </a>
-                </div>
-              </p>
-           
-              
-            </form>
-
-
-          </div>
+            </div>
         </div>
-
 
         <footer>
             <div class = "flex-left">
@@ -163,6 +139,8 @@
                         <li><a class = "heading-text" id = "product">Product</a></li>
                         <li><a href = "ride.html" class = "ride" id = "ride">Ride</a></li> 
                         <li><a href="drive.html" class = "drive" id = "drive">Drive</a></li> 
+                        <li><a href="neighbour.html" class = "neighbour" id = "neighbour">Neighbour</a></li> 
+
                     </ul> 
                 </div>
                 <div class = "company">
@@ -172,7 +150,7 @@
                         <li><a href="blog.html" class = "blog" id = "blog">Blog</a></li> 
                         <li><a href="careers.html" class = "career" id = "career">Careers</a></li>
                         <li><a href="community.html" class = "community" id = "community">Community</a></li> 
-                        <li><a href="faq.html" class = "faq" id = "faq">FAQ</a></li> 
+                        <li><a href="contact.html" class = "faq" id = "faq">FAQ</a></li> 
                         <li><a href="sitemap.html" class = "sitemap" id = "sitemap">Sitemap</a></li> 
                     </ul> 
                 </div>

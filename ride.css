@@ -17,7 +17,7 @@ body {
   font-weight: 550;
 }
 
-.service {
+.service{
   font-weight : bold;
 }
 
@@ -112,13 +112,104 @@ nav ul li + li {
 
 /* mainbody */
 .mainbody {
-  background-color: white;
-  padding: 10px;
-  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  color: #231F20;
 }
 
-h1 { 
-  color : black;
+.container {
+  display: flex;
+  width: 80%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.container-left, .container-right {
+  width: 50%;
+  padding: 20px;
+}
+
+.container-left {
+  border-right: 1px solid #ddd;
+}
+
+.header {
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+  padding: 12px;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  background-color: #B09CFC;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+  margin-bottom: 10px;
+  width: 90%;
+}
+
+button[type="submit"]:hover {
+  background-color: #8C6EFA;
+}
+
+.container-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  margin-bottom: 20px;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.options-header {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.options .option-text {
+  font-size: 16px;
+}
+
+.options .collapse-btn img {
+  width: 30px;
+  height: 30px;
+  right: 0;
+  margin-top: 5px;
 }
 
 /* footer */
@@ -182,113 +273,4 @@ footer ul li a {
   display: flex;
   justify-content: flex-end;
   margin-left: auto;
-}
-
-/* Book ride page format */
-.sub-title-text {
-  color: #333;
-  font-size: 22px;
-  font-weight: bold;
-  margin : 3px;
-  text-align: start;
-}
-
-
-.book-ride-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120vh;
-  font-family: sans-serif;
-  letter-spacing: 1px;
-  padding: px;
-}
-
-.book-rides {
-  padding : 65px;
-  background-color: #a6ffef;
-}
-
-.view-rides {
-  padding : 46px;
-  padding-right: 100px;
-  background-color: white;
-  border: 1px solid black
-}
-
-
-/* Style for form */
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-form p {
-  margin-bottom: 7px;
-}
-
-form label {
-  font-family : sans-serif;
-  font-size : 15px;
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="date"] {
-  padding: 12px;
-  width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 7px;
-  box-sizing: border-box;
-  color: #333;
-  margin-top: 5px;
-}
-
-button[type="submit"] {
-  padding: 10px;
-  background-color: #B09CFC;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 15px;
-  margin-bottom: 10px;
-  margin-top : 20px;
-  width: 100%;
-  font: sans-serif;
-  font-weight: 600;
-  color: black;
-}
-
-button[type="submit"]:hover {
-  background-color: #8C6EFA;
-}
-
-.fancy-link {
-  position: relative;
-  display: flex;
-  align-items: center;
-  border: 1px solid #231F20;
-  padding: 20px;
-  border-radius: 10px;
-  height: 8px;
-  width: 100%;
-}
-
-.link-text {
-  margin-right:10px;
-  font: sans-serif;
-  font-size: 80%;
-  color: grey;
-  font-weight: bold;
-}
-
-.compress-btn {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  right: 0;
-  margin-right: 10px;
-  border-radius: 7px;
 }

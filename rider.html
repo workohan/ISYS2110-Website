@@ -2,7 +2,7 @@
 <html>
     <head> 
         <title>Driver's Page</title>
-        <link rel="stylesheet" href="drive.css">
+        <link rel="stylesheet" href="ride.css">
     </head>
 
     <body>
@@ -48,11 +48,11 @@
         <div class = "mainbody">
             <div class = "container">
                 <div class = "container-left">
-                    <h1 class = "header">Create a Drive</h1>
+                    <h1 class = "header">Book a Ride</h1>
                     <form class="form">
                         <p>
-                            <label for="starting-point"><b>Starting Point :</b></label>
-                            <input type="text" placeholder="Enter Starting Point" name="starting-point" id="starting-point" required>
+                            <label for="starting-point"><b>Pickup Point :</b></label>
+                            <input type="text" placeholder="Enter Pickup Location" name="pickup-location" id="pickup-location" required>
                         </p>
                         <p>
                             <label for="destination"><b>Destination :</b></label>
@@ -60,41 +60,40 @@
                         </p>
                         <p>
                             <label for="date"><b>Date :</b></label>
-                            <input type="date" placeholder="Date of Drive: DD/MM/YYYY" name="date" id="date" required>
+                            <input type="date" placeholder="Date of Ride: DD/MM/YYYY" name="date" id="date" required>
                         </p>
                         <p>
                             <label for="time"><b>Time :</b></label>
-                            <input type="time" placeholder="Time of Drive: HH:MM am/pm" name="time" id="time" required>
+                            <input type="time" placeholder="Time of Ride: HH:MM am/pm" name="time" id="time" required>
                         </p>
-                        <p>
-                            <label for="max-pass"><b>Maximum Number of Passengers :</b></label>
-                            <input type="number" placeholder="Maximum number of passengers" name="max-pass" id="max-pass" required>
-                        </p>
-                        <button type="submit">Confirm Drive</button>
+                        <button type="submit">Confirm Ride</button>
                     </form>
 
                 </div>
 
                 <div class = "container-right">
-                    <h1 class = "header">View Drives</h1>
+                    <h1 class = "header">View Rides</h1>
 
                     <div class="options">
-                        <p class="option-1">Current Drive</p>
-                        <a href="driver-currentDrive.html" class = "collapse-btn">
+                        <label class = "options-header">Scheduled Rides</label>
+                        <p class="option-1">Current Ride</p>
+                        <a href="rider-currentRide.html" class = "collapse-btn">
                             <img src="Images/collapse-btn.png" class="collapse-btn">
                         </a>                    
                     </div>
 
                     <div class="options">
-                        <p class="option-2">Upcoming Drive</p>
-                        <a href="driver-upcomingDrive.html" class = "collapse-btn">
+                        <label class = "options-header">Scheduled Rides</label>
+                        <p class="option-2">Upcoming Ride</p>
+                        <a href="rider-upcomingRides.css" class = "collapse-btn">
                             <img src="Images/collapse-btn.png" class="collapse-btn">
                         </a>                    
                     </div>
 
                     <div class="options">
-                        <p class="option-3">Drives History</p>
-                        <a href="driver-driveHistory.html" class = "collapse-btn">
+                        <label class = "options-header">Scheduled Rides</label>
+                        <p class="option-3">Ride History</p>
+                        <a href="rider-rideHistory.html" class = "collapse-btn">
                             <img src="Images/collapse-btn.png" class="collapse-btn">
                         </a>                    
                     </div>
