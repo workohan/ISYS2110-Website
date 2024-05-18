@@ -2,10 +2,47 @@
 
 	<head>
 		<title>Driver Rides</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="contact.css">
 	</head>
 
 <body>
+	<nav> 
+        <div class = "navbar">
+            <div class = "topnav-left">
+                <ul> 
+                <li><a class = "logo" id = "logo">NeighbourLink</a></li>
+                <li><a href="main.html" class = "home" id = "home">Home</a></li> 
+                <li><a href="aboutUs.html" class = "aboutUs" id = "aboutUs">About Us</a></li> 
+                <li class="dropdown">
+                    <div class = "service">
+                        <a href="#">Services</a>
+                        <img src = "Images/down-arrow.png" class = "down-arrow" id = "down-arrow">
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="drive.html">Drive</a>
+                        <a href="ride.html">Ride</a>
+                    </div>
+                </li>
+                <li><a href="contact.html" class = "contact" id = "contact">Contact</a></li> 
+                </ul> 
+            </div>
+            <div class = "topnav-right">
+                <ul> 
+                <li><a href = "login.html" class = "login" id = "login">Log In</a></li>
+                <li><a href = "register.html" class = "register" id = "register">Register</a></li>
+                <li class="dropdown">
+                    <div class = "profile">
+                        <a href="#">Profile</a>
+                        <img src = "Images/down-arrow.png" class = "down-arrow" id = "down-arrow">
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="profile.html">Account Info</a>
+                        <a href="payment.html">Payment Methods</a>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav> 
 	<table class="driver_rides_table">
 		<tr>
 			<th>When</th>
