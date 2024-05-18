@@ -117,6 +117,7 @@ nav ul li + li {
     align-items: center;
     padding: 100px;
     color: #231F20;
+    letter-spacing: 1px;
 }
 
 .container {

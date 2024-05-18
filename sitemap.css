@@ -115,6 +115,8 @@ nav ul li + li {
     background-color: white;
     padding: 10px;
     height: 500px;
+    letter-spacing: 1px;
+
 }
 
 h1 { 

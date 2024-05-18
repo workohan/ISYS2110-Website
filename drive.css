@@ -117,6 +117,7 @@ nav ul li + li {
     align-items: center;
     padding: 100px;
     color: #231F20;
+    letter-spacing: 1px;
 }
 
 .container {
@@ -187,13 +188,18 @@ button[type="submit"] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 20px;
-    margin-bottom: 20px;
+    padding: 2px 20px;
+    margin-bottom: 15px;
     width: 90%;
     border: 1px solid #ccc;
     border-radius: 7px;
     box-sizing: border-box;
     background-color: #ffffff;
+  }
+
+.options-header {
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .options .option-text {
