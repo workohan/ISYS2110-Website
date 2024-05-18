@@ -1,21 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head> 
-        <title>View Account Information</title>
-        <link rel="stylesheet" href="pending-neighbour.css">
-
-        <script>
-            function acceptNeighbor() {
-                alert("Neighbour accepted");
-                window.location.href = "neighbour.html";
-            }
-    
-            function rejectNeighbor() {
-                alert("Neighbour rejected");
-                window.location.href = "neighbour.html";
-            }
-
-        </script>
+        <title>Neighbours' Page</title>
+        <link rel="stylesheet" href="neighbour.css">
     </head>
 
     <body>
@@ -59,43 +46,51 @@
         </nav> 
         
         <div class = "mainbody">
-            <div class = "combined">
-                <div class = "mainbody-left">
-                    <a href="neighbour.html" class = "prev-btn">
-                        <img src="Images/prev.png" class="prev-btn">
-                    </a>    
-                    <h1 class = "accountInfo-text">Account Info</h1>
-                    <p class = "heading-text">PROFILE IMAGE</p>
-                    <img src = "Images/addImage.png" class = "profileImage-img">
-
-                    <div class="neighbor-action">
-                        <button onclick="acceptNeighbor()" class="accept-btn">Accept</button>
-                        <button onclick="rejectNeighbor()" class="reject-btn">Reject</button>
+            <div class = "container">
+                <div class = "established">
+                    <h1 class = "header">Established Neighbours</h1>
+                    <div class="neighbours">
+                        <p class = "options-text">Neighbour 1 Name</p>
+                        <a href="profile-neighbour.html" class = "collapse-btn">
+                            <img src="Images/collapse-btn.png" class="collapse-btn">
+                        </a> 
+                    </div>
+                    <div class="neighbours">
+                        <p class = "options-text">Neighbour 2 Name</p>
+                        <a href="profile-neighbour.html" class = "collapse-btn">
+                            <img src="Images/collapse-btn.png" class="collapse-btn">
+                        </a> 
+                    </div>
+                    <div class="neighbours">
+                        <p class = "options-text">Neighbour 3 Name</p>
+                        <a href="profile-neighbour.html" class = "collapse-btn">
+                            <img src="Images/collapse-btn.png" class="collapse-btn">
+                        </a> 
                     </div>
                 </div>
 
-                <div class = "mainbody-right">
-                    <p class = "heading-text">ACCOUNT DETAILS</p>
-                    <p>
-                        <div class = "container-info">
-                            <p class = "placeholder">Name :</p>
-                            <div class = "text-box">
-                                <p>user name</p>
-                            </div>
-                        </div>
-                    </p>
-                    <p>
-                        <p class = "placeholder">Email :</p>
-                        <div class = "text-box">
-                            <p>user@mail.com</p>
-                        </div>
-                    </p>
-                    <p>
-                        <p class = "placeholder">Phone Number :</p>
-                        <div class = "text-box">
-                            <p>+61 xxx xxx xxx</p>
-                        </div>
-                    </p>
+                <div class = "pending">
+                    <h1 class = "header">Pending Neighbours</h1>
+                    <div class="neighbours">
+                        <p class = "options-text">Neighbour 1 Name</p>
+                        <a href="pending-neighbour.html" class = "collapse-btn">
+                            <img src="Images/collapse-btn.png" class="collapse-btn">
+                        </a> 
+                    </div>
+
+                    <div class="neighbours">
+                        <p class = "options-text">Neighbour 2 Name</p>
+                        <a href="pending-neighbour.html" class = "collapse-btn">
+                            <img src="Images/collapse-btn.png" class="collapse-btn">
+                        </a> 
+                    </div>
+
+                    <div class="neighbours">
+                        <p class = "options-text">Neighbour 3 Name</p>
+                        <a href="pending-neighbour.html" class = "collapse-btn">
+                            <img src="Images/collapse-btn.png" class="collapse-btn">
+                        </a> 
+                    </div>
                 </div>
             </div>
         </div>
@@ -131,6 +126,7 @@
                         <li><a href = "ride.html" class = "ride" id = "ride">Ride</a></li> 
                         <li><a href="drive.html" class = "drive" id = "drive">Drive</a></li> 
                         <li><a href="neighbour.html" class = "neighbour" id = "neighbour">Neighbour</a></li> 
+
                     </ul> 
                 </div>
                 <div class = "company">
@@ -139,7 +135,7 @@
                         <li><a href = "aboutUs.html" class = "aboutUs" id = "aboutUs">About Us</a></li> 
                         <li><a href="blog.html" class = "blog" id = "blog">Blog</a></li> 
                         <li><a href="careers.html" class = "career" id = "career">Careers</a></li>
-                        <li><a href="community.html" class = "community" id = "community">Community</a></li>
+                        <li><a href="community.html" class = "community" id = "community">Community</a></li> 
                         <li><a href="contact.html" class = "faq" id = "faq">FAQ</a></li> 
                         <li><a href="sitemap.html" class = "sitemap" id = "sitemap">Sitemap</a></li> 
                     </ul> 
