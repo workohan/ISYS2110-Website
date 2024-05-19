@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head> 
-        <title>Upcoming Drive Page</title>
-        <link rel="stylesheet" href="driver-upcomingDrive.css">
+        <title>Pickup Information</title>
+        <link rel="stylesheet" href="pickup-neighbour.css">
 
         <script>
             function goBack() {
@@ -53,34 +53,16 @@
         
         <div class = "mainbody">
             <div class = "container">
-                <div class = "container-right">
+                <div class = "ride-details">
                     <img src="Images/prev.png" onclick="goBack()"class="prev-btn">
+                    <h1 class = "header">Pickup Information</h1>
 
-                    <h1 class = "header">List of Upcoming Drives</h1>
-
-                    <p class = "options-header">Upcoming Drive 1</p>
-                    <div class="options">
-                        <p class="option-1">View upcoming drive 1</p>
-                        <a href="driver-acceptRider.html" class = "collapse-btn">
-                            <img src="Images/collapse-btn.png" class="collapse-btn">
-                        </a>                    
-                    </div>
-
-                    <p class = "options-header">Upcoming Drive 2</p>
-                    <div class="options">
-                        <p class="option-2">View upcoming drive 2</p>
-                        <a href="driver-acceptRider.html" class = "collapse-btn">
-                            <img src="Images/collapse-btn.png" class="collapse-btn">
-                        </a>                    
-                    </div>
-
-                    <p class = "options-header">Upcoming Drive 3</p>
-                    <div class="options">
-                        <p class="option-3">View upcoming drive 3</p>
-                        <a href="driver-acceptRider.html" class = "collapse-btn">
-                            <img src="Images/collapse-btn.png" class="collapse-btn">
-                        </a>                    
-                    </div>
+                    <ul class = "ride-info">
+                        <li>Date : DD/MM/YYYY</li>
+                        <li>Time of Departure : XX:XX</li>
+                        <li>From : Pickup point</li>
+                        <li>To : Neighbour's destination</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -116,7 +98,6 @@
                         <li><a href = "ride.html" class = "ride" id = "ride">Ride</a></li> 
                         <li><a href="drive.html" class = "drive" id = "drive">Drive</a></li> 
                         <li><a href="neighbour.html" class = "neighbour" id = "neighbour">Neighbour</a></li> 
-
                     </ul> 
                 </div>
                 <div class = "company">
