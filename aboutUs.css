@@ -255,13 +255,17 @@ nav ul li + li {
 }
 
 .values-section {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
 }
 
 .values-list {
     list-style-type: none;
     padding: 0;
+}
+
+.values-list li{
+    margin-bottom: 30px;
 }
 
 .join-tgr {

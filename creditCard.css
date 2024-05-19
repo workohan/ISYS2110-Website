@@ -111,7 +111,6 @@ nav ul li + li {
 }
 
 .mainbody {
-    background-color: #A6FFEF;
     padding: 90px 150px;
     font-family: sans-serif;
     letter-spacing: 1px;
@@ -120,71 +119,19 @@ nav ul li + li {
     align-items: center;
 }
 
-/* mainbody */
-.mainbody {
-    background-color: #A6FFEF;
-    font-family: sans-serif;
-    letter-spacing: 1px;
-    display: flex;
-}
-
-/* left mainbody */
-.combined {
-    display: flex;
-
-}
-
-.mainbody-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 50px;
-    background-color: #FFFFFF;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 50%;
-}
-
-.add-pm {
-    margin-bottom: 20px;
-    width: 300px;
-    font-size: 22px;
-}
-
-.credit-card {
-    position: relative;
-    display: flex;
-    align-items: center;
-    border: 1px solid #231F20;
-    padding: 20px;
-    border-radius: 10px;
-    height: 20px;
-}
-
-.cc-text {
-    margin-right: 10px;
-}
-
-.compress-btn {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    right: 0;
-    margin-right: 10px;
-    border-radius: 7px;
-}
-
 /* right mainbody */
 .mainbody-right {
     display: inline-block;
     width: 700px;
-    background-color: #B09CFC;
 }
 
 .container {
     max-width: 400px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 70px;
     border-radius: 5px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
 }
 
 .link-text {
@@ -195,7 +142,7 @@ nav ul li + li {
 }
 
 .card-details {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
 }
 
@@ -221,12 +168,13 @@ input[type="text"] {
     color: #333;
     margin: 7px 0px;
     height: 50px;
+    margin-bottom: 20px;
 }
 
 button[type="submit"] {
     margin-top: 20px;
     padding: 10px;
-    background-color: #5D64FF;
+    background-color: #B09CFC;
     color: white;
     border: none;
     border-radius: 5px;
@@ -237,7 +185,7 @@ button[type="submit"] {
   }
   
 button[type="submit"]:hover {
-    background-color: blue;
+    background-color: #8C6EFA;
 }
 
 /* footer */
