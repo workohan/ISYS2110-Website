@@ -140,6 +140,11 @@ nav ul li + li {
     width: 70%;
 }
 
+.sitemap {
+    margin-top: 50px;
+    width: 80%;
+}
+
 /* footer */
 footer {
     position : static;
