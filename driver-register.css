@@ -200,3 +200,20 @@ footer ul li a {
     justify-content: flex-end;
     margin-left: auto;
 }
+
+/* submit button */
+button[type="submit"] {
+    padding: 10px;
+    background-color: #B09CFC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    margin-bottom: 10px;
+    width: 15%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #8C6EFA;
+  }
