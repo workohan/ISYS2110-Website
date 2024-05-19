@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Driver Register</title>
+        <link rel="stylesheet" href="driver-register.css">
+    </head>
+
+    <body>
+        <nav> 
+            <div class = "navbar">
+                <div class = "topnav-left">
+                    <ul> 
+                    <li><a class = "logo" id = "logo">NeighbourLink</a></li>
+                    <li><a href="main.html" class = "home" id = "home">Home</a></li> 
+                    <li><a href="aboutUs.html" class = "aboutUs" id = "aboutUs">About Us</a></li> 
+                    <li class="dropdown">
+                        <div class = "service">
+                            <a href="#">Services</a>
+                            <img src = "Images/down-arrow.png" class = "down-arrow" id = "down-arrow">
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="drive.html">Drive</a>
+                            <a href="ride.html">Ride</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html" class = "contact" id = "contact">Contact</a></li> 
+                    </ul> 
+                </div>
+                <div class = "topnav-right">
+                    <ul> 
+                    <li><a href = "login.html" class = "login" id = "login">Log In</a></li>
+                    <li><a href = "register.html" class = "register" id = "register">Register</a></li>
+                    <li class="dropdown">
+                        <div class = "profile">
+                            <a href="#">Profile</a>
+                            <img src = "Images/down-arrow.png" class = "down-arrow" id = "down-arrow">
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="profile.html">Account Info</a>
+                            <a href="payment.html">Payment Methods</a>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </nav> 
+        
+        <h1>Register to drive</h1>
+        <form>
+            <h2>Your details</h2>
+            <label for="license-no">Enter your license number:</label>
+            <input id="license-no" type="number" min=1000000000 max=9999999999><br>
+            <p><i>Please only tick the below box if your license is not currently suspended, <br>and has not been suspended in the last 12 months.</i></p>
+            <label for="suspended">I acknowledge my license has not been suspended in the last 12 months:</label>
+            <input id="suspended" type="checkbox"><br>
+            <p><i>Please only tick the below box if you consent to NeighbourLink providing details <br>about your vehicle to 'riders' who book to travel with you.</i></p>
+            <label for="share-details">I consent to NeighbourLink sharing information with riders:</label>
+            <input id="share-details" type="checkbox"><br>
+            <p><i>Please only tick the below box if you consent to NeighbourLink linking you with 'riders' <br>to carpool with you on trips scheduled through the NeighbourLink tool<br>and that you will drive pick up and drop-off riders at locations agreed to within the tool.</i></p>
+            <label for="driver-conduct">I agree to drive 'riders' to and from locations as listed in NeighbourLink:</label>
+            <input id="driver-conduct" type="checkbox"><br>
+
+            <h2>Your vehicle</h2>
+            <label for="vehicle-brand">Enter your vehicle's brand:</label>
+            <input id="vehicle-brand" type="text"><br>
+            <label for="vehicle-model">Enter your vehicle's model:</label>
+            <input id="vehicle-model" type="text"><br>
+            <label for="vehicle-year">Enter your vehicle's model year:</label>
+            <input id="vehicle-year" type="number" min=1980 max=2024><br>
+            <label for="vehicle-rego">Enter your vehicle's registration plate:</label>
+            <input id="vehicle-rego" type="text"><br>
+
+            <h2>Final submission</h2>
+            <p><i>Please note that providing incorrect and/or false information to NeighbourLink may lead to removal of your account and legal prosecution.</i></p>
+            <label for="truth-check">I acknowledge that the information I have provided above is true to the best of my knowledge:</label>
+            <input id="truth-check" type="checkbox"><br>
+            
+        </form>
+        <a href = "driver_register_done.html">
+            <button href="driver_register_done.html">Submit</button>
+            </a>
+
+        <footer>
+            <div class = "flex-left">
+                <div class = "copyright">
+                    <p class = "cr">© Copyright 2024 NeighbourLink</p>
+                </div>
+                <div class = "promote">
+                    <p class = "follow-us">Follow us:</p>
+                    <div class = "socmed">
+                        <div class = "socmedlogo">
+                            <img src = "Images/instagram.png" alt = "iglogo" id = "iglogo">
+                        </div>
+                        <div class = "socmedlogo">
+                            <img src = "Images/facebook.png" alt = "fblogo" id = "fblogo">
+                        </div>
+                        <div class = "socmedlogo">
+                            <img src = "Images/twitter.png" alt = "twlogo" id = "twlogo">
+                        </div>
+                        <div class = "socmedlogo">
+                            <img src = "Images/linkedin.png" alt = "linkedinlogo" id = "linkedinlogo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "flex-right">
+                <div class = "product">
+                    <ul> 
+                        <li><a class = "heading-text" id = "product">Product</a></li>
+                        <li><a href = "ride.html" class = "ride" id = "ride">Ride</a></li> 
+                        <li><a href="drive.html" class = "drive" id = "drive">Drive</a></li> 
+                    </ul> 
+                </div>
+                <div class = "company">
+                    <ul> 
+                        <li><a class = "heading-text" id = "company">Company</a></li>
+                        <li><a href = "aboutUs.html" class = "aboutUs" id = "aboutUs">About Us</a></li> 
+                        <li><a href="blog.html" class = "blog" id = "blog">Blog</a></li> 
+                        <li><a href="careers.html" class = "career" id = "career">Careers</a></li>
+                        <li><a href="community.html" class = "community" id = "community">Community</a></li> 
+                        <li><a href="contact.html" class = "faq" id = "faq">FAQ</a></li> 
+                        <li><a href="sitemap.html" class = "sitemap" id = "sitemap">Sitemap</a></li> 
+                    </ul> 
+                </div>
+                <div class = "legal">
+                    <ul>
+                        <li><a class = "heading-text" id = "legal">Legal</a></li>
+                        <li><a href = "security.html" class = "security" id = "security">Security</a></li> 
+                        <li><a href = "terms-and-conditions.html" class = "t&c" id = "t&c">Terms and Conditions</a></li> 
+                        <li><a href = "privacy-policy.html" class = "privacy-policy" id = "privacy-policy">Privacy Policy</a></li> 
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+    </body>
+</html>
