@@ -2,7 +2,7 @@
 <html>
     <head> 
         <title>Driver Register</title>
-        <link rel="stylesheet" href="driver-register.css">
+        <link rel="stylesheet" href="driver-registerDone.css">
     </head>
 
     <body>
@@ -44,44 +44,20 @@
             </div>
         </nav> 
         
-        <h1>Register to drive</h1>
-        <form>
-            <h2>Your details</h2>
-            <label for="license-no">Enter your license number:</label>
-            <input id="license-no" type="number" min=1000000000 max=9999999999><br>
-            <p><i>Please only tick the below box if your license is not currently suspended, <br>and has not been suspended in the last 12 months.</i></p>
-            <label for="suspended">I acknowledge my license has not been suspended in the last 12 months:</label>
-            <input id="suspended" type="checkbox"><br>
-            <p><i>Please only tick the below box if you consent to NeighbourLink providing details <br>about your vehicle to 'riders' who book to travel with you.</i></p>
-            <label for="share-details">I consent to NeighbourLink sharing information with riders:</label>
-            <input id="share-details" type="checkbox"><br>
-            <p><i>Please only tick the below box if you consent to NeighbourLink linking you with 'riders' <br>to carpool with you on trips scheduled through the NeighbourLink tool<br>and that you will drive pick up and drop-off riders at locations agreed to within the tool.</i></p>
-            <label for="driver-conduct">I agree to drive 'riders' to and from locations as listed in NeighbourLink:</label>
-            <input id="driver-conduct" type="checkbox"><br>
+        <div class = "mainbody">
+            <div class = "container">
+                <h1>Thank you!</h1>
+                <h2 style="margin-left:10px">We will assess your application and correspond with you shortly via the email linked to your account.</h2>
+                <button type="submit" onclick=goHome()>Return home</button>  
+            </div>
+        </div>
 
-            <h2>Your vehicle</h2>
-            <label for="vehicle-brand">Enter your vehicle's brand:</label>
-            <input id="vehicle-brand" type="text"><br>
-            <label for="vehicle-model">Enter your vehicle's model:</label>
-            <input id="vehicle-model" type="text"><br>
-            <label for="vehicle-year">Enter your vehicle's model year:</label>
-            <input id="vehicle-year" type="number" min=1980 max=2024><br>
-            <label for="vehicle-rego">Enter your vehicle's registration plate:</label>
-            <input id="vehicle-rego" type="text"><br>
-
-            <h2>Final submission</h2>
-            <p><i>Please note that providing incorrect and/or false information to NeighbourLink may lead to removal of your account and legal prosecution.</i></p>
-            <label for="truth-check">I acknowledge that the information I have provided above is true to the best of my knowledge:</label>
-            <input id="truth-check" type="checkbox"><br>
-            
-        </form>
-        <a href = "driver_register_done.html">
-            <button type="submit" style="background-color: black; color: white;" 
-            href="driver_register_done.html">
-            Submit
-            </button>
-            </a>
-
+        <script>
+            function goHome()
+            {
+                window.location.href = "main.html"
+            }
+        </script>
         <footer>
             <div class = "flex-left">
                 <div class = "copyright">
@@ -134,7 +110,6 @@
                     </ul>
                 </div>
             </div>
-
         </footer>
     </body>
 </html>

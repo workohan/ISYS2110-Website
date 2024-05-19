@@ -3,6 +3,12 @@
     <head> 
         <title>Driver Register</title>
         <link rel="stylesheet" href="driver-register.css">
+        <script>
+          function goHome(event) {
+                event.preventDefault(); // Prevent the default form submission
+                window.location.href = "driver-registerDone.html";
+            }
+        </script>
     </head>
 
     <body>
@@ -43,20 +49,50 @@
                 </div>
             </div>
         </nav> 
-        
-        <h1>Thank you!</h1>
-        <h2 style="margin-left:10px">We will assess your application and correspond with you shortly via the email linked to your account.</h2>
-        <button type="submit" onclick=goHome()>Return home</button>
-        <div id="driver_register_done_whitespace">
-            
+
+        <div class = "mainbody">
+            <div class = "container">
+                <div class = "register-form">
+                    <div class = "register-text-div">
+                        <p class = "register-text">Register to Drive</p>
+                    </div>
+                    <form class="form" onsubmit="goHome(event)">
+                        <h2>Your details</h2>
+                        <label for="license-no">Enter your license number:</label>
+                        <input id="license-no" type="number" min=1000000000 max=9999999999>
+                        <p><i>Please only tick the below box if your license is not currently suspended, and has not been suspended in the last 12 months.</i></p>
+                        <label for="suspended">I acknowledge my license has not been suspended in the last 12 months:</label>
+                        <input id="suspended" type="checkbox">
+                        <p><i>Please only tick the below box if you consent to NeighbourLink providing details about your vehicle to 'riders' who book to travel with you.</i></p>
+                        <label for="share-details">I consent to NeighbourLink sharing information with riders:</label>
+                        <input id="share-details" type="checkbox">
+                        <p><i>Please only tick the below box if you consent to NeighbourLink linking you with 'riders' to carpool with you on trips scheduled through the NeighbourLink tool and that you will drive pick up and drop-off riders at locations agreed to within the tool.</i></p>
+                        <label for="driver-conduct">I agree to drive 'riders' to and from locations as listed in NeighbourLink:</label>
+                        <input id="driver-conduct" type="checkbox">
+
+                        <h2>Your vehicle</h2>
+                        <label for="vehicle-brand">Enter your vehicle's brand:</label>
+                        <input id="vehicle-brand" type="text">
+                        <label for="vehicle-model">Enter your vehicle's model:</label>
+                        <input id="vehicle-model" type="text">
+                        <label for="vehicle-year">Enter your vehicle's model year:</label>
+                        <input id="vehicle-year" type="number" min=1980 max=2024>
+                        <label for="vehicle-rego">Enter your vehicle's registration plate:</label>
+                        <input id="vehicle-rego" type="text">
+
+                        <h2>Final submission</h2>
+                        <p><i>Please note that providing incorrect and/or false information to NeighbourLink may lead to removal of your account and legal prosecution.</i></p>
+                        <label for="truth-check">I acknowledge that the information I have provided above is true to the best of my knowledge:</label>
+                        <input id="truth-check" type="checkbox">
+
+                        <button type="submit">
+                        Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
         </div>
 
-        <script>
-            function goHome()
-            {
-                window.location.href = "main.html"
-            }
-        </script>
         <footer>
             <div class = "flex-left">
                 <div class = "copyright">
@@ -87,6 +123,7 @@
                         <li><a class = "heading-text" id = "product">Product</a></li>
                         <li><a href = "ride.html" class = "ride" id = "ride">Ride</a></li> 
                         <li><a href="drive.html" class = "drive" id = "drive">Drive</a></li> 
+                        <li><a href="neighbour.html" class = "neighbour" id = "neighbour">Neighbour</a></li> 
                     </ul> 
                 </div>
                 <div class = "company">
