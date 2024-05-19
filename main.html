@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>NeighbourLink</title>
+        <link rel="stylesheet" href="main.css">
+        <script>
+            function toRegister() {
+                window.location.href = 'register.html';
+            }
+
+            function toAboutUs() {
+                window.location.href = 'aboutUs.html';
+            }
+        </script>
+    </head>
+
+    <body>
+        <nav> 
+            <div class = "navbar">
+                <div class = "topnav-left">
+                    <ul> 
+                    <li><a class = "logo" id = "logo">NeighbourLink</a></li>
+                    <li><a href="main.html" class = "home" id = "home">Home</a></li> 
+                    <li><a href="aboutUs.html" class = "aboutUs" id = "aboutUs">About Us</a></li> 
+                    <li class="dropdown">
+                        <div class = "service">
+                            <a href="#">Services</a>
+                            <img src = "Images/down-arrow.png" class = "down-arrow" id = "down-arrow">
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="drive.html">Drive</a>
+                            <a href="ride.html">Ride</a>
+                            <a href="neighbour.html">Neighbour</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html" class = "contact" id = "contact">Contact</a></li> 
+                    </ul> 
+                </div>
+                <div class = "topnav-right">
+                    <ul> 
+                    <li><a href = "login.html" class = "login" id = "login">Log In</a></li>
+                    <li><a href = "register.html" class = "register" id = "register">Register</a></li>
+                    <li class="dropdown">
+                        <div class = "profile">
+                            <a href="#">Profile</a>
+                            <img src = "Images/down-arrow.png" class = "down-arrow" id = "down-arrow">
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="profile.html">Account Info</a>
+                            <a href="payment.html">Payment Methods</a>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </nav> 
+
+        <div class = "mainbody">
+            <div class = "heading">
+                <h1>NeighbourLink</h1>
+                <p>Your number 1 car-sharing web-based platform. Whether you're looking to share your car, book a ride, or connect with your community, NeighbourLink is here offer you the best services!</p>
+            </div>
+
+            <div class="sub-container">
+                <div class="left-container">
+                    <img src="Images/bg.jpg" class="left-image">
+                </div>
+
+                <div class="right-container">
+                    <h1 class = "head-text">Share your RIDE Share your DREAM</h1>
+                    <p>Join us on a mission to reduce CO2 emmisions!</p>
+                    <div class = "links">
+                        <button type="submit" onclick=toRegister()>Get Started</button>
+                        <a href="login.html" class="hyperlink">Or sign into your existing account</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "sub-container">
+                <div class="left-container-text">
+                    <h1 class = "head-text">Drive however you want, whenever you want.</h1>
+                    <p>Passionate about the enviornment? Driving for NeighbourLink means making money while making a difference.</p>
+                    <a href="driver_start.html" class="hyperlink">Register as a NeighbourLink Driver now!</a>
+                </div>
+
+        <div id="regiserDriver" class="sub-container">
+            <div class="left-half-container" style="justify-content: center;">
+                <p class="subheading">Drive however you want,</p>
+                <p class="subheading">whenever you want.</p>
+                <p style="font-size: 17px">
+                    Passionate about the enviornment? Driving for NeighbourLink means making money 
+                    while making a difference.
+                </p>
+                <a href="driver_start.html" class="hyperlink-intext" style="margin-left: 0px">
+                    Register as a NeighbourLink Driver now!
+                </a>
+            </div>
+
+            <div class="sub-container">
+                <div class="left-container">
+                    <img src="Images/bookARide.jpg" class = "left-image">
+                </div>
+
+                <div class="right-container">
+                    <h1 class = "head-text">Heading somewhere? Book a ride!</h1>
+                    <p>Whether its for a spontaneous holiday or another trip to work, our state-of-the-art ride-share system will match you to a driver who most accurately meets your preferences.</p>
+                    <a href="ride.html" class="hyperlink">Book a ride now!
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="sub-container">
+                <div class="left-container-text">
+                    <h1 class="head-text">Sustainability-reimagined.</h1>
+                    <p>Discover how the NeighbourLink upholds their commiment to sustainability and user satisfaction.</p>
+                    <button type="submit" onclick=toAboutUs()>Find out</button>
+                    <a href="contact.html" class="hyperlink">Still have questions? Contact us here</a>
+                </div>
+
+                <div class="right-container-image">
+                    <img src="Images/sustainability.jpg" class = "right-image">
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class = "flex-left">
+                <div class = "copyright">
+                    <p class = "cr">© Copyright 2024 NeighbourLink</p>
+                </div>
+                <div class = "promote">
+                    <p class = "follow-us">Follow us:</p>
+                    <div class = "socmed">
+                        <div class = "socmedlogo">
+                            <img src = "Images/instagram.png" alt = "iglogo" id = "iglogo">
+                        </div>
+                        <div class = "socmedlogo">
+                            <img src = "Images/facebook.png" alt = "fblogo" id = "fblogo">
+                        </div>
+                        <div class = "socmedlogo">
+                            <img src = "Images/twitter.png" alt = "twlogo" id = "twlogo">
+                        </div>
+                        <div class = "socmedlogo">
+                            <img src = "Images/linkedin.png" alt = "linkedinlogo" id = "linkedinlogo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "flex-right">
+                <div class = "product">
+                    <ul> 
+                        <li><a class = "heading-text" id = "product">Product</a></li>
+                        <li><a href = "ride.html" class = "ride" id = "ride">Ride</a></li> 
+                        <li><a href="drive.html" class = "drive" id = "drive">Drive</a></li> 
+                        <li><a href="neighbour.html" class = "neighbour" id = "neighbour">Neighbour</a></li> 
+                    </ul> 
+                </div>
+                <div class = "company">
+                    <ul> 
+                        <li><a class = "heading-text" id = "company">Company</a></li>
+                        <li><a href = "aboutUs.html" class = "aboutUs" id = "aboutUs">About Us</a></li> 
+                        <li><a href="blog.html" class = "blog" id = "blog">Blog</a></li> 
+                        <li><a href="careers.html" class = "career" id = "career">Careers</a></li>
+                        <li><a href="community.html" class = "community" id = "community">Community</a></li> 
+                        <li><a href="contact.html" class = "faq" id = "faq">FAQ</a></li> 
+                        <li><a href="sitemap.html" class = "sitemap" id = "sitemap">Sitemap</a></li> 
+                    </ul> 
+                </div>
+                <div class = "legal">
+                    <ul>
+                        <li><a class = "heading-text" id = "legal">Legal</a></li>
+                        <li><a href = "security.html" class = "security" id = "security">Security</a></li> 
+                        <li><a href = "terms-and-conditions.html" class = "t&c" id = "t&c">Terms and Conditions</a></li> 
+                        <li><a href = "privacy-policy.html" class = "privacy-policy" id = "privacy-policy">Privacy Policy</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
