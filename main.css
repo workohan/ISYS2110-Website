@@ -111,9 +111,120 @@ nav ul li + li {
 }
 
 /* mainbody */
+.mainbody {
+    background-color: white;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    padding: 70px;
+    color: #231F20;
+    width: 90%;
+}
 
-h1 { 
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.heading h1 { 
+    color : #231F20;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.heading p {
+    opacity: 0.9;
+    width: 70%;
+}
+
+.sub-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #ddd;
+    padding: 50px;
+}
+
+.sub-container:last-child {
+    border-bottom: none;
+}
+
+.left-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin-right: 20px;
+}
+
+.right-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.head-text {
     color : black;
+    font-size: 50px;
+}
+
+.left-container-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-container-image {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-right: 20px;
+}
+
+.left-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    opacity: 80%;
+}
+
+.right-image {
+    width: 90%;
+    object-fit: contain;
+}
+
+.links a{
+    margin-left: 20px;
+}
+
+.hyperlink {
+    color: black;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #B09CFC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 30%;
+}
+
+button[type="submit"]:hover {
+    background-color: #8C6EFA;
 }
 
 /* footer */
@@ -177,114 +288,4 @@ footer ul li a {
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
-}
-
-/* Main page elements */
-.container {
-    position: relative;
-    display: flex;
-    margin-bottom: 100px;
-    padding-top: 50px;
-    
-}
-
-.left-container {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    padding: 50px;
-    padding-top: 70px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-}
-
-.right-container {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 60%;
-    padding-left: 50px;
-    margin-top: 5%;
-    margin-left: 5%;
-}
-
-.left-image {
-    width: 110%; 
-    height: 100%; 
-    object-fit: contain;
-    opacity: 80%;
-}
-
-.big-text {
-    font-size: 70px;
-    font: sans-serif;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    font-weight: light;
-    letter-spacing: 0px;
-}
-
-button[type="submit"] {
-    padding: 10px;
-    background-color: #B09CFC;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 20px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    width: 30%;
-}
-
-button[type="submit"]:hover {
-    background-color: #8C6EFA;
-}
-
-/* For Get started and quick links */
-.subheading {
-    font-size: 45px;
-    font-weight: bold;
-    margin: 0;
-}
-
-.hyperlink {
-    color: black;
-    margin-left: 20px;
-}
-
-.hyperlink-intext {
-    color: black;
-    font-size: 17px;
-}
-
-.sub-container {
-    position: relative;
-    display: flex;
-    margin-bottom: 0px;
-    width: 100%; 
-    justify-content: center;
-    /* border: 1px solid blue; */
-}
-
-.left-half-container {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    padding: 50px;
-    padding-top: 60px;
-    padding-bottom: 50px;
-    margin-bottom: 0px;
-    margin-top: 20px;
-    /* border: 1px solid black; */
-}
-
-.right-half-container {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    padding-left: 50px;
-    margin-top: 5%;
-    padding: 50px;
-    /* border: 1px solid red; */
 }
